@@ -5,4 +5,4 @@ for x in {1..999}; do
         sum=$(( $sum + $x ))
     fi
 done
-echo "$sum"
+echo "Answer: $sum"

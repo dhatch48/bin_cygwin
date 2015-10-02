@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import pprint
 one = 1
 two = 2
