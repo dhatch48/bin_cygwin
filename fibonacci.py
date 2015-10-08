@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+""" Examples taken from: http://www.python-course.eu/recursive_functions.php """
+
 """ Inefficient Recursive function for calculating fibonacci numbers """
 def fib(n):
     if n == 0:

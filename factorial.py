@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+""" Examples taken from: http://www.python-course.eu/recursive_functions.php """
 
 import pdb
 
