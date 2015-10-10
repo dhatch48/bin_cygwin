@@ -1,16 +1,15 @@
 #!/usr/bin/env python
 
-import math
+import time
+start = time.time()
 
-""" Find all prime factors then return the max"""
+""" Find all prime factors, then return the greatest factor"""
 primeLookup = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
 def isPrime(num):
     if num in primeLookup:
         return True
     else:
-        numSqrt = math.sqrt(num)
-        stopNumber = math.floor(numSqrt)
-        #print('numSqrt: %f  stopNumber: %d' % (numSqrt,stopNumber))
+        stopNumber = int(num**0.5)
         scale = []
         if stopNumber > primeLookup[-1]:
             scale = list(range(101,stopNumber+1,2))
@@ -28,7 +27,7 @@ def isPrime(num):
 
 primeFactors = []
 def findPrimeFactors(number):
-    stopNumber = math.floor(math.sqrt(number))
+    stopNumber = int(number**0.5)
     #print('inputNumber: %d  stopNumber: %d' % (number,stopNumber))
     scale = []
     if stopNumber > primeLookup[-1]:
@@ -52,7 +51,7 @@ def findPrimeFactors(number):
             else:
                 findPrimeFactors(result)
                 break
-
 findPrimeFactors(600851475143)
+end = time.time()
+print(end - start)
 print(max(primeFactors))
-#print(isPrime(31))
