@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """ http://databasefaq.com/index.php/answer/158935/python-recursion-prime-factoring-python-recursive-solution-for-prime-factorization-duplicate"""
 import time
@@ -25,12 +25,17 @@ def primeFacRecurse(n):
         lst.append(n)
     else:
         while n % c != 0:
-            c += 1
+            if c == 2:
+                c += 1
+            else:
+                c += 2
         if n == c:
+            # Handle where n is prime
             lst.append(n)
         else:
+            # Factor found now recurse on quotient
             lst.append(c)
-            lst += primeFac(n // c)
+            lst += primeFacRecurse(n // c)
         return lst
 print(primeFacRecurse(600851475143))
 end = time.time()
