@@ -22,22 +22,22 @@ def primeFac(n):
             c += 1
     return lst
 
-lcm = {}
+lcmFactors = {}
 for i in range(2,21):
     factors = primeFac(i)
     maxCount = {}
     #print(i,factors)
     if len(factors) == 1:
-        lcm[i] = 1
+        lcmFactors[i] = 1
     else:
         maxCount = {x: 0 for x in factors}
         for j in factors:
             maxCount[j] += 1
         for num,power in maxCount.items():
-            lcm[num] = max(lcm[num],power)
+            lcmFactors[num] = max(lcmFactors[num],power)
 
 product = 1
-for num,power in lcm.items():
+for num,power in lcmFactors.items():
     product *= num**power
 print('Answer:',product)
 
