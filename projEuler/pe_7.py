@@ -15,7 +15,7 @@ def isPrime(n):
         return False
     else:
         c = 3
-        while c < n ** 0.5:
+        while c <= n ** 0.5:
             if n % c == 0:
                 return False
             c += 2
