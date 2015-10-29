@@ -31,10 +31,10 @@ def myCollatzSequence(n):
         seq.append(n)
     return seq
 
-i = 1
+i = 1000000
 maxChainLength = 0
 answer = 0
-while i < 1000:
+while i < 5000000:
     i += 1
     seq = myCollatzSequence(i)
     if len(seq) > maxChainLength:
