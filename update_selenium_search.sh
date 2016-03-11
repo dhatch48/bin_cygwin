@@ -1,7 +1,7 @@
 #!/bin/bash
-set -x
+#set -x
 
-wordListFile="$HOME/bin/wordListClean.txt"
+wordListFile="$HOME/bin/tech_wordlist.txt"
 scriptFile="$HOME/bin/selenium_test_30.html"
 
 # Get index from 1st line of file and then increment
@@ -9,8 +9,8 @@ read -r index < "$wordListFile"
 (( index++ ))
 
 # Loop the word list file
-lineCount=$(wc -l "$wordListFile")
-if [[ $index > $lineCount ]];then
+lineCount=$(wc -l "$wordListFile" | awk '{print $1}')
+if [[ $index -gt $lineCount ]];then
     index=2
 fi
 
