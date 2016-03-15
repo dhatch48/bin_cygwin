@@ -1,1217 +1,1217 @@
-2
-3D Printer
-Log File
-Export
-Zero Day Exploit
-RADCAB
-Character Encoding
-CDFS
-Soft Token
-DVD+R
-Mouse
-SDLC
-Rootkit
-Secondary Memory
-Register
-DRM
-SSL
-XHTML
-GUI
-ZIF
-ActiveX
-Half-Duplex
-Computer
-Cyberbullying
-Formula
-Mini DV
-Soft Copy
-E-commerce
-Web Development
-Dot Matrix
-Login
-Goodput
-Word Processor
-Fragmentation
-Raw File
-Tunneling
-Crossplatform
-Apache
-Permalink
-PROM
-Queue
-Metadata
-CGI
-Port
-Boot Sector
-Storage Device
-File Extension
-Monochrome
-AIX
-Adaptive Content
-Flexible
-Scrolling
-Index
-OLED
-VPN
-Encryption
-Parallel Port
-DAC
-Clean Install
-SOA
-Bluetooth
-Read-only
-Filename
-Minisite
-Pinterest
-Cursor
-Full-Duplex
-SIMM
-Packet
-System Hardening
-Output
-RDRAM
-Apple
-SYN Flood
-Session
-Memory Leak
-MAMP
-Vaporware
-ODBC
-Finder
-Site Map
-PPP
-Cloud
-Sound Card
-Newline
-Netmask
-Thyristor
-White Paper
+3
 Social Engineering
-Wired
-Trackball
-SDK
-Alert Box
-SMS
-Router
-Unfriend
-Hypertext
-Favicon
-Output Device
-Extranet
-Download
-WordArt
-IPv4
-GPGPU
-Kilobyte
-CRM
-Long
-Text Box
-Zone File
-MMS
-Video Card
-Dual-Core
-Dock
-Driver
-Bridge
-SDSL
-Cell
-Format
-DirectX
-HDMI
-TWAIN
-Grep
-GPU
-Plug and Play
-Readme
-PCI-X
-Truncate
-Data Transfer Rate
-Boot Sequence
-Flaming
-Flatbed
-Extensible
-OOP
-API
-SNMP
-Start Menu
-Baseband
-Plotter
-Home Page
-SSH
-GIS
-MP3
-Cybersquatter
-Link
-Big Data
-Refresh
-SATA
-FPGA
-Cookie
-DMA
-Enterprise
-Webmail
-Import
-Degauss
-Sidebar
-Standby
-ASP
-Vector
-Handshake
-Tebibyte
-Grid Computing
-VoIP
-Spool
-GIGO
-ECC
-Lion
-Latency
-Field
-Data
-Social Networking
-Memory Stick
-Yottabyte
-WordPress
-Hexadecimal
-Spyware
-Bespoke
-Multiplatform
-Payload
-Repeater
-Overclocking
-TFT
-Cloud Computing
-Meta Search Engine
-Burn
-PPPoE
-Tiger
-Enum
-FSB
-ATM
-Hyperlink
-Silent Install
-Primary Key
-Tab
-URL
-Data Type
-Heap
-Passive-Matrix
-OLE
-Zebibyte
-NUI
-Ergonomics
-Chromebook
-File Compression
-Command Prompt
-Batch Process
-Gigahertz
-FAT32
-SO-DIMM
-WAIS
-IRC
-Executable File
-EIDE
-Refresh Rate
-Flash
-String
-CPM
-ATX
-Supercomputer
-Partition
-Public Domain
-CPS
-Kibibyte
-MIDI
-JRE
-ISA
-Mobile
-Matrix
-Chipset
-Antivirus
-Web Forum
-POST
-CMOS
-Bitcoin
-Memory Module
-Smishing
-Tumblr
-DVD
-Malware
-ASCII
-Inbox
-Control Panel
-Defragment
-Facebook
-Page Layout
-IPX
-Instagram
-Inkjet
-Greenfield
-Application
-Toolbar
-Avatar
-FLOPS
-Gigabit
-Contextual Menu
-iSCSI
-Website
-VRAM
-4K
-Laser Printer
-CSS
-White Balance
-CD-ROM
-Buffer
-ISP
-Abend
-VGA
-CPC
-Micron
-Nanometer
-Domain
-Superscript
-Bit
-Password
-User-Friendly
-Python
-EDI
-Skyscraper
-Mail Server
-Transistor
-Dual Boot
-Megabit
-Fluid Layout
-DV
-CCD
-CTR
-MIS
-RPM
-Thick Client
-Lead
-Screenshot
-SLI
-Clock Speed
-I/O Address
-TTL
-SMTP
-Slashdot
-Resolution
-Graymail
-Registry
-Android
-OASIS
-External Hard Drive
-OLAP
-Parked Domain
-WYSIWYG
-MBR
-Blacklist
-Checksum
-TRIM
-Clone
-Parity Bit
-Adware
-RFID
-Compile
-USB
-Page Fault
-Search Engine
-Frequency
-Script
-Log On
-Beta Software
-E-learning
-DVD-RAM
-Dialog Box
-Insertion Point
-SD
-bps
-IP Address
-Virus
-Array
-Hyper-Threading
-KOffice
-Interactive Video
-PUP
-Mouse Pad
-Quad-Core
-HSF
-Passphrase
-Petabyte
-Directory
-Shareware
-Delete
-Document
-Exabyte
-UNC
-Thunderbolt
-DDL
-Native File
-Prebinding
-HDTV
-Southbridge
-Title Bar
-DAS
-Digital
-Viral
-Margin
-Web Design
-Windows 10
-QR Code
-Loop
-Phreaking
-Keywords
-Direct3D
-DOS
-OpenCL
-Plug-in
-URI
-HTML5
-CAD
-DSL
-PCI
-Superscalar
-HFS
-Grayscale
-AIFF
-Platform
-Snow Leopard
-Golden Master
-SSD
-Web Application
-Passcode
-AGP
-Banner Ad
-Power Supply
-Spam
-Teleconference
-Card Reader
-Gibibyte
-Tablet
-APU
-Syntax Error
-Megapixel
-Troubleshooting
-Gigaflops
-Bare Metal Restore
-Media Compression
-Iteration
-Archie
-Cross-Browser
-ISO
-Configuration
-Active Cell
-SMART
-DHCP
-Print Server
-Ribbon
-Clock Cycle
-FPS
-Parity
-NAT
-Restore
-4G
-Google
-Undo
-Service Pack
-Northbridge
-Backside Bus
-Switch
-Winsock
-Swipe
-Mainframe
-Multitasking
-BitTorrent
-NSP
-Hover
-802.11ac
-Frame
-Computer Ethics
-LPI
-Syntax
-VLE
-Whitelist
-SPX
-ICS
-File Association
-Mbps
-SKU
-PRAM
-Interlaced
-Skin
-Boot
-Toslink
-Virtual Memory
-Brownfield
-Architecture
-BASIC
-DLC
-Web Ring
-Middleware
-RTE
-USB-C
-Wireless
-OpenGL
-CD-R
-OSPF
-Method
-Bus
-Rosetta
-UML
-CISC
-FDDI
-DRAM
-UTF
-DLL
-Drag and Drop
-Docking Station
-PCI Express
-Raster Graphic
-Emoticon
-Batch File
-PowerPoint
-Caps Lock
-OSD
-VLB
-Metafile
-Personal URL
-Menu Bar
-Portal
-Blu-ray
-Spoofing
-Vlog
-Laptop
-Hashtag
-Secondary Storage
-YouTube
-Shell
-Bot
-Bloatware
-Dongle
-Macintosh
-Clipboard
-Impact Printer
-Optical Carrier
-E-mail Bankruptcy
-Technology Services
-Snapshot
-CPU
-Newbie
-Digital Footprint
-Leopard
-Podcast
-Clip Art
-Brouter
-VRML
-Disk Drive
-DAW
-Navigation Bar
-VCI
-Ping
-Null Character
-Botnet
-SMM
-Namespace
-Safe Mode
-Microphone
-IT
-Left-Click
-Breadcrumbs
-Source Code
-Surge Protector
-Monitor
-Serial Port
-WPA
-PPTP
-FPU
-Multithreading
-Trash
-Windows XP
-Parse
-Rich Text
-Friend
-Row
-DVD-RW
-Ripcording
-U
-DDR
-Unix
-Compact Flash
-Win32
-BMP
-Leaf
-NoSQL
-Socket
-I/O
-System Requirements
-Unmount
-Minicomputer
-CD-RW
-File Type
-Memory Bank
-Kilohertz
-Kilobit
-SIP
-Task Bar
-Office
-Windows 7
-sRGB
-Iframe
-Computer Science
-Dynamic Website
-DBMS
-Progressive Scan
-WAN
-Throughput
-WDDM
-End User
-SIM Card
-Alpha Software
-Bezel
-Assembler
-Garbage Collection
-Pop-Up
-Scraping
-XSLT
-PS/2
-Snippet
-EXIF
-SaaS
-Recursion
-HTTPS
-Multiprocessing
-Mavericks
-OSI Model
-Email Bomb
-Lossy
-ADF
-Upload
-Horizontal Market Software
-Windows 8
-DNS
-Bookmark
-Keystroke
-Hit
-Open Source
-DIMM
-DNS Record
-Bounce
-Workstation
-Text Alignment
-Web Host
-Ethernet
-Cluster
-Motion Tween
-RGB
-Copy
-Num Lock
-JSON
-Copyright Infringement
-NOC
-Firewall
-Compiler
-Traceroute
-Hacker
-iTunes
-Wildcard
-Biometrics
-QBE
-PPGA
-Cybercrime
-Heat Sink
-Power User
-Zettabyte
-ICANN
-ASP.NET
-Moodle
-MySQL
-Protocol
-Scroll Wheel
-Attachment
-Query
-Footer
-Bitrate
-Keyboard Shortcut
-ARP
-Digital Camera
-Desktop Computer
-GIF
-System Analyst
-Emulation
-Remote Desktop
-Motherboard
-Runtime Error
-Floppy Disk
-Component
-Root
-Heartbleed
-Data Management
-RUP
-Maximize
-ICF
-Phishing
-E-reader
-PCB
-UPS
-Leaderboard
-Responsive Web Design
-Denial of Service
-Sampling
-Processor Core
-MANET
-Copyright
-TIFF
-Spider
-Record
-Web Server
-C#
-Impression
-Gbps
-Markup Language
-Font Case
-TCP
-LED
-NVRAM
-Widget
-Pretest
-Header
-Page Orientation
-System Unit
-Peopleware
-Real-Time
-SMB
-GPIO
-Virus Definition
-Add-on
-Dot Pitch
-Mac OS
-Null
-User Interface
-Samba
-Mirrored Volume
-InterNIC
-Word
-Mashup
-SAN
-ATA
-SDRAM
-UDDI
-Column
-Mnemonic
-VPI
-Ripping
-Storage Capacity
-ICMP
-Server
-Proxy Server
-Joystick
-Virtual Reality
-PUM
-Network Topology
-IPS
-Spellcheck
-Autoresponder
-Flowchart
-NTFS
-Remote User
-DVD+RW
-Media
-Minimize
-Version Control
-LTE
-Hardware
-Warm Boot
-Internet
-CMS
-W3C
-Username
-CTP
-Linux
-HDD
-Dial-up
-Interface
-ANSI
-Load Balancing
-Hypermedia
-File Server
-Friendly URL
-Meme
-Stack
-C/C++
-WINS
-Optical Drive
-Backup
-Unicode
-MDI
-IIS
-Regular Expression
-Windows
-CDMA
-eBook
-SRAM
-Right Click
-Mebibyte
-Developer
-Backlink
-CD
-Piconet
-GPS
-Teraflops
-Template
-Standalone
-Direct Digital Marketing
-CPA
-ICQ
-Tutorial
-Byte
-Redundancy
-Expansion Card
-Symbolic Link
-Spreadsheet
-Halftone
-DSLAM
-Assistive Technology
-EUP
-Sector
-Nybble
-Repository
-Icon
-Ajax
-CIFS
-Process
-JPEG
-HTML
-Installer
-Graphics
-Internet of Things
-Visual Basic
-Reimage
-Listserv
-Piracy
-VDU
-Daemon
-Jumper
-File System
-Favorites
-Hard Token
-ALU
-LCD
-Perl
-Function
-LUN
-Webmaster
-FiOS
-Surface
-Typecasting
-Power Cycle
-WIMP
-T3
-Illegal Operation
-JavaScript
-Cryptography
-Deprecated
-Pipeline
-Windows RT
-Newsgroup
-Dithering
-Commercial Software
-Localhost
-Overwrite
-Kindle
-Hard Drive
-RDF
-iPad
-Petaflops
-Trinitron
-Vector Graphic
-BIOS
-RPC
-Software
-GUID
-Open Firmware
-Program
-Crash
-Smartphone
-Yobibyte
-Pharming
-Bcc
-Sprite
-Mirror
-Paste
-Crop
-Logic Error
-CLOB
-Webcam
-Window
-Flash Memory
-JSP
-MTU
-Plagiarism
-jQuery
-Infotainment
-eSports
-RSS
-DTD
-CRT
-CPL
-Real Number
-Constant
-Waveform
-DFS
-Systray
-EPS
-Telecommunications
-Sample
-Cc
-TCP/IP
-MySpace
-SSID
-Animated GIF
-Tweet
-Text Editor
-IVR
-Gigabyte
-Cut
-Command Line Interface
-Scanner
-Subnet Mask
-Subdirectory
-Boot Disk
-RTF
-BSOD
-MCA
-NetBIOS
-Install
-Broadband
-Meta Tag
-Programming Language
-FQDN
-LAMP
-Base Station
-Hub
-Tooltip
-Printer
-VFAT
-Compression
-Backbone
-Google Drive
-Scalable
-Access
-BarCraft
-Flat File
-Memory
-Camera RAW
-Sample Rate
-Frozen
-Multimedia
-Wizard
-Wiki
-ADSL
-Del.icio.us
-Parameter
-CDN
-IRQ
-Desktop Publishing
-Blob
-Cron
-Subscript
-OEM
-Yosemite
-PNG
-Fiber Optic Cable
-Worm
-Hard Copy
-Certificate
-Optical Media
-404 Error
-Freeware
-Blog
-WAVE
-Database
-Controller Card
-Gopher
-Status Bar
-IBM Compatible
-Speakers
-Non-Impact Printer
-Drop Down Menu
-Honeypot
-CMYK
-Node
-Target Disk Mode
-TFTP
-OS X
-Boolean
-Cold Boot
-Schema
-Typeface
-Domain Suffix
-NIC
-Macro
-Hotfix
-Captcha
-Thermistor
-Archive
-WWW
-Multi-Core
-SQL
-Troll
-MPEG
-P2P
-Remote Access
-Web Page
-SEO
-ADC
-Path
-Media Queries
-PCMCIA
-IMAP
-NNTP
-Name Server
-Debugger
-Hard Disk
-3G
-Root Directory
-Terabyte
-WHOIS
-Pixel
-Flash Drive
-App
-Disk Image
-Default Program
-Microcomputer
-Clean Room
-Ruby
-Utility
-Torrent
-VDSL
-PPC
-PDF
-IDS
-Vertical Market Software
-Lossless
-Lightning
-Keylogger
-NAS
-MIPS
-Integer
-DVI
-CUDA
-DCIM
-Artificial Intelligence
-GNU
-IP
-Bug
-System Resources
-Affiliate
-iPod
-Sync
-802.11g
-ROM
-iCloud
-Hertz
-IPv6
-Keyboard
-Digitize
-Console
-Bare Metal
-PMU
-SERP
-Firmware
-Virtualization
-JFS
-Smart Home
-Yahoo!
-Double Click
-Codec
-Thumbnail
-ISDN
-Integrated Circuit
-SOAP
-Bézier Curve
-HDV
-Donationware
-Address Bar
-System Software
-Microblogging
-Primary Memory
-Toggle Key
-PPL
-UPnP
-Offline
-Denary
-KDE
-IEEE
-PC
-Ultra DMA
-Raw Data
-Swap File
-Social Media
-CamelCase
-Input
-Desktop
-Spooling
-Solid State
-Static Website
-Word Wrap
-Edutainment
-Applet
-Firewire
-iOS
-UGC
-802.11b
-Runtime
-Recycle Bin
-Logic Gate
-Gamma Correction
-Tweak
-Framework
-Servlet
-Volume
-Table
-Network
-Baud
-Excel
-Intranet
-Simplex
-Recursive Function
-PDA
-Debug
-File Format
 DDR3
-Terahertz
-Plain Text
-Proprietary Software
-Font
-Input Device
-PPS
-RAID
-ICT
-Intellectual Property
-Streaming
-Web 2.0
-Web Publishing
-Drive
-Scareware
-System Preferences
-Assembly Language
-Bitmap
-Internal Hard Drive
-Thread
-WiMAX
-LIFO
-WAMP
-Tag
-Lag
-Touchscreen
-Online
-Digital Signature
-802.11n
-Host
-UAT
-PIM
-Algorithm
-Domain Name
-RJ45
-Scroll Bar
-XMP
-Emoji
-Dvorak Keyboard
+Toolbar
+Golden Master
 Cache
-Client
-Push
-Struct
-Drag
-X86
-LDAP
-PostScript
-Wi-Fi
-Wavelength
-Snapchat
-Adapter
-Variable
-Third Party
-Page View
-FIFO
-Barebones
-PHP
-Microkernel
-Interpreter
-IGP
-Class
-PON
-RISC
-Cyberspace
-Bash
-Chip
-ACL
-Speech Recognition
-Folder
-Coaxial Cable
-Twitter
-Dashboard
-FTP
-Set
-LinkedIn
-DVR
-SLA
-Modem
-WEP
-PPI
-eSATA
-Peripheral
-Shift Key
-AUP
-Multicasting
-QWERTY
-Trackback
-Megahertz
-File
-DMZ
-Heuristic
-Windows Vista
-SoC
-Opacity
+Runtime Error
+eBook
+Fluid Layout
+Mainframe
+Parity
+Visual Basic
+Left-Click
+Matrix
+GIGO
+SERP
+KDE
+Blog
+Donationware
+DirectX
+Overwrite
+Surge Protector
+iSCSI
 Operating System
+bps
+Power User
+Clock Speed
+Megahertz
+4G
+Microblogging
+Switch
+Megabit
+PPTP
+Throughput
+Bezel
+Web Application
+File Extension
+Redundancy
+Google
+PostScript
+Technology Services
+eSports
+Cold Boot
+Pop-Up
+Recursion
 Terminal
-Touchpad
-Trojan Horse
-Tape Drive
-Hibernate
-Ad Hoc Network
-Character
-Floating Point
-Binary
-Retina Display
+Skyscraper
+Driver
+Flash
+Component
+Cloud
+Hexadecimal
+Modem
+SSID
+Standalone
+Domain Name
+OOP
+Computer Ethics
+Toggle Key
+Default Program
+Maximize
+Crash
+ALU
 Molex Connector
-Reciprocal Link
-Mountain Lion
-PPM
-Bing
-Exbibyte
-Pseudocode
-DDR2
-Thin Client
-IM
-HTTP
-Telnet
-MAC Address
-Token
-Integrated
-Pebibyte
-Outbox
-DPI
-KVM Switch
-POP3
-Hot Swappable
-Access Point
-Kerning
-Modifier Key
-Gnutella
-JSF
-FILO
-Analog
-iPhone
-Kernel
-Mount
+TFTP
+Blob
+Frequency
+Program
+Gibibyte
+Microphone
+Recursive Function
+Contextual Menu
+Firmware
+W3C
+MIPS
+Socket
+Beta Software
+802.11g
+EDI
+Proprietary Software
+CD-RW
+ICANN
+RGB
+Raw File
+VLB
+Service Pack
+Regular Expression
+Hotfix
+Public Domain
+Leaderboard
+KOffice
+PON
+NoSQL
+Text Alignment
+Character Encoding
+VDSL
+Apple
+PDF
 DVD-R
+Windows 7
+Search Engine
+Email Bomb
+SSD
+Plotter
+Bing
+Web Design
+DRM
+Shareware
+Handshake
+Kerning
+Kibibyte
+System Resources
+FDDI
+Secondary Memory
+Access Point
+RTF
+GIF
+Webmail
+Minimize
+Docking Station
+ASP
+Assembly Language
+Troubleshooting
+Video Card
+PPM
+Chromebook
+Hashtag
+IGP
+Template
+File Type
+System Requirements
+MIS
+Tooltip
+Streaming
+Chipset
+Quad-Core
+Queue
+Peopleware
+LDAP
+I/O
+Word Processor
+Barebones
+ICMP
+VRML
+Tutorial
+HDD
+Keylogger
+Index
+Artificial Intelligence
+Text Editor
+IM
+Num Lock
+Process
+PPP
+Dual-Core
+JSF
+Host
+Dynamic Website
+Bespoke
+IIS
+Plug-in
+Digital Footprint
+IRQ
+Teraflops
+Instagram
+Insertion Point
+Runtime
+CD-R
+Yahoo!
+Joystick
+Status Bar
+Cyberbullying
+CLOB
+Compiler
+MBR
+DVD-RW
+Firewall
+Smartphone
+URI
+Snapchat
+Snapshot
+WiMAX
+Integrated Circuit
+SIP
+WordArt
+Subscript
+Floating Point
+Method
+Flash Memory
+Python
+Formula
+OpenCL
+Grep
+EUP
+DNS Record
+CMYK
+Virtual Memory
+VCI
+Install
+MAC Address
+Minicomputer
+Printer
+PPPoE
+Repository
+Login
+PNG
+DV
+Packet
+Mouse
+Hot Swappable
+Trackball
+Media
+Gigaflops
+WIMP
+Hibernate
+Certificate
+Mbps
+Vertical Market Software
+Facebook
+Installer
+WWW
+Extensible
+Wired
+iCloud
+802.11ac
+Cybersquatter
+Web Server
+Emulation
+Readme
+Parse
+SSL
+Non-Impact Printer
+Favicon
+VPI
+Hard Disk
+Meta Tag
+NetBIOS
+Edutainment
+Hypertext
+UPS
+Storage Device
+Transistor
+UTF
+E-reader
+Denial of Service
+Sync
+Ribbon
+Real-Time
+MPEG
+Exabyte
+Clone
+Unfriend
+Metafile
+Scroll Wheel
+Class
+Impact Printer
+Control Panel
+Meme
+ADC
+ICS
+Restore
+Hardware
+Null Character
+Mouse Pad
+Reimage
+Swap File
+Leopard
+Memory Module
+Whitelist
+HDMI
+Cut
+BarCraft
+Upload
+Offline
+Mail Server
+Interlaced
+MCA
+RJ45
+Netmask
+PCI Express
+Retina Display
+Drop Down Menu
+Petabyte
+Root Directory
+Screenshot
+Record
+Clock Cycle
+Simplex
+MDI
+PIM
+Torrent
+Wireless
+PC
+Assistive Technology
+Digital
+Heartbleed
+ICQ
+Widget
+Row
+3D Printer
+Cookie
+Analog
+Wavelength
+Hyperlink
+Lossy
+Brouter
+DAS
+Plagiarism
+Third Party
+IMAP
+NIC
+Cross-Browser
+LED
+Table
+Input Device
+Media Compression
+Localhost
+Scraping
+Prebinding
+DVD-RAM
+Mavericks
+Southbridge
+Word Wrap
+Compile
+Pebibyte
+Ergonomics
+Binary
+BSOD
+Spellcheck
+Finder
+Website
+Clip Art
+Nybble
+OSI Model
+Perl
+FLOPS
+Backbone
+Graymail
+MANET
+EPS
+HTML
+PHP
+Bitcoin
+PowerPoint
+PDA
+Moodle
+Snow Leopard
+Tebibyte
+PS/2
+Text Box
+Excel
+Bug
+System Unit
+Algorithm
+PPC
+RPM
+Tape Drive
+Checksum
+Twitter
+Platform
+String
+OEM
+ASCII
+Backlink
+Shell
+sRGB
+Newbie
+Biometrics
+Illegal Operation
+Cloud Computing
+OLAP
+Rich Text
+Thermistor
+JFS
+Export
+Loop
+FSB
+Deprecated
+Multithreading
+JRE
+Parity Bit
+GUI
+GPIO
+Laptop
+System Software
+BMP
+Intellectual Property
+Print Server
+Array
+ISDN
+SDK
+Superscript
+Windows RT
+Plain Text
+NVRAM
+Integrated
+Web Forum
+Network Topology
+Chip
+Home Page
+Botnet
+FQDN
+RPC
+Application
+Heap
+QR Code
+Unicode
+Page Orientation
+Root
+DVD
+Virus Definition
+CD
+CPA
+XSLT
+NOC
+Gigahertz
+Zero Day Exploit
+Multi-Core
+Yosemite
+Lead
+Piconet
+SDRAM
+Parallel Port
+Heat Sink
+IDS
+Google Drive
+Tab
+CDN
+Dialog Box
+Dongle
+InterNIC
+Denary
+C/C++
+Scanner
+Open Firmware
+CamelCase
+Base Station
+Desktop
+Web Development
+Phreaking
+Social Media
+Online
+Boot Disk
+Programming Language
+Gbps
+Batch File
+CRT
+Icon
+Bare Metal
+CD-ROM
+Boolean
+WordPress
+Typeface
+Parked Domain
+White Paper
+MP3
+Camera RAW
+SOA
+Namespace
+POST
+CUDA
+AGP
+Gnutella
+Pseudocode
+Daemon
+PCI
+Controller Card
+Progressive Scan
+Boot
+Metadata
+Memory Stick
+Dot Matrix
+Buffer
+Tag
+XMP
+DBMS
+WAVE
+Northbridge
+PCB
+Power Cycle
+Trojan Horse
+Plug and Play
+OASIS
+Register
+Boot Sequence
+PPI
+Avatar
+PPS
+Friend
+Keystroke
+Windows Vista
+SIM Card
+Static Website
+ZIF
+Hyper-Threading
+YouTube
+Dashboard
+Media Queries
+Add-on
+PROM
+Thin Client
+TCP
+Primary Key
+SYN Flood
+Long
+FPGA
+Router
+Window
+WEP
+Repeater
+Sample Rate
+Bcc
+Username
+Recycle Bin
+Gigabyte
+CMS
+PPGA
+SDLC
+Goodput
+HTML5
+Emoji
+Degauss
+P2P
+CMOS
+SEO
+Flash Drive
+WAMP
+Vector Graphic
+Gamma Correction
+Solid State
+Vector
+Inkjet
+Markup Language
+Megapixel
+System Preferences
+Portal
+USB
+Mebibyte
+Pinterest
+Optical Media
+Warm Boot
+SoC
+Breadcrumbs
+Unmount
+Gigabit
+File Format
+Raster Graphic
+Proxy Server
+Virus
+Flatbed
+ActiveX
+Query
+E-commerce
+Hypermedia
+Middleware
+VoIP
+CTP
+Wildcard
+Vlog
+Subnet Mask
+Del.icio.us
+Newline
+PUM
+Spooling
+Pixel
+Heuristic
+QBE
+Hard Drive
+Commercial Software
+Viral
+SLI
+E-learning
+Bash
+Access
+DHCP
+Mashup
+Safe Mode
+Favorites
+Caps Lock
+C#
+Trash
+Mnemonic
+Input
+Virtualization
+Superscalar
+Real Number
+Monochrome
+Digitize
+Yobibyte
+Shift Key
+Set
+SAN
+File Compression
+Animated GIF
+SMART
+ANSI
+Developer
+TWAIN
+TRIM
+Cluster
+Grayscale
+SD
+Stack
+PUP
+Drag
+HTTP
+Permalink
+Web Host
+API
+Keyboard Shortcut
+Attachment
+Paste
+T3
+Kindle
+Systray
+GPS
+UGC
+Unix
+Tablet
+Page Fault
+WYSIWYG
+UNC
+Kilobyte
+Vaporware
+DRAM
+Antivirus
+Menu Bar
+Emoticon
+Scalable
+Rosetta
+Speech Recognition
+LTE
+Windows 8
+User-Friendly
+FPU
+Skin
+Desktop Computer
+Ripcording
+White Balance
+Copyright Infringement
+Office
+External Hard Drive
+Logic Gate
+Font Case
+Linux
+EXIF
+LPI
+NUI
+HDTV
+Mount
+Microkernel
+Ruby
+Open Source
+Ajax
+Telecommunications
+Fiber Optic Cable
+Architecture
+Typecasting
+Server
+Crop
+Hub
+Broadband
+Memory Leak
+SOAP
+Mirrored Volume
+Serial Port
+SQL
+SLA
+Lossless
+TCP/IP
+ACL
+Lag
+Data Type
+Teleconference
+Honeypot
+Archie
+Gopher
+Memory Bank
+Win32
+POP3
+GPGPU
+IPv6
+Ad Hoc Network
+I/O Address
+Header
+Drive
+Computer Science
+MySpace
+ATM
+Remote Desktop
+Hit
+WAN
+Bitmap
+IPv4
+iOS
+DDR
+Expansion Card
+OS X
+System Hardening
+Slashdot
+Podcast
+ASP.NET
+NTFS
+Bit
+Null
+Baud
+Iteration
+iPhone
+Debugger
+Friendly URL
+E-mail Bankruptcy
+Tweak
+Boot Sector
+Sector
+MIDI
+Constant
+NNTP
+AIX
+Snippet
+HDV
+Domain Suffix
+Reciprocal Link
+Alpha Software
+Encryption
+Ethernet
+Load Balancing
+Windows
+Footer
+Kilohertz
+CDFS
+RADCAB
+Microcomputer
+Passphrase
+Interpreter
+Undo
+RISC
+DVR
+Cc
+Graphics
+Scroll Bar
+Wi-Fi
+Abend
+Zebibyte
+Primary Memory
+Function
+Worm
+Burn
+Web Publishing
+Spider
+USB-C
+LinkedIn
+Thumbnail
+Task Bar
+Spreadsheet
+CDMA
+Target Disk Mode
+Banner Ad
+Enterprise
+Internet
+Word
+OpenGL
+Peripheral
+ISO
+Bloatware
+Lightning
+IT
+Sidebar
+Hard Copy
+Cybercrime
+Power Supply
+AUP
+Piracy
+Command Prompt
+DPI
+SO-DIMM
+Disk Image
+App
+ARP
+Scareware
+ODBC
+JPEG
+Wizard
+Delete
+BitTorrent
+802.11b
+Mobile
+DDL
+Column
+Scrolling
+Port
+SNMP
+WHOIS
+PPL
+ATA
+Schema
+Filename
+Terahertz
+Desktop Publishing
+Assembler
+Tweet
+Compact Flash
+RDF
+Debug
+Crossplatform
+Mini DV
+LUN
+Folder
+Sample
+Blu-ray
+Payload
+Cursor
+Dual Boot
+Clipboard
+Flowchart
+WAIS
+DTD
+OSPF
+File Association
+GPU
+Smart Home
+CPU
+Domain
+Source Code
+Waveform
+WINS
+URL
+Micron
+Toslink
+Social Networking
+Alert Box
+Modifier Key
+Page Layout
+Dot Pitch
+Thyristor
+Bridge
+Drag and Drop
+Kernel
+EIDE
+Motherboard
+Optical Drive
+Supercomputer
+Spam
+Leaf
+IEEE
+JSON
+HSF
+Telnet
+Tunneling
+Archive
+Horizontal Market Software
+Bot
+FIFO
+802.11n
+Interactive Video
+NSP
+Outbox
+Workstation
+Framework
+Read-only
+Backside Bus
+Petaflops
+Command Line Interface
+User Interface
+Bitrate
+Multimedia
+Virtual Reality
+DDR2
+UPnP
+Thick Client
+Affiliate
+Sprite
+MTU
+Cryptography
+SATA
+Hacker
+Intranet
+Passive-Matrix
+Mountain Lion
+Macintosh
+DFS
+RDRAM
+DVI
+Refresh
+Variable
+Backup
+Motion Tween
+JSP
+Big Data
+Pipeline
+UML
+Webcam
+Zettabyte
+OLED
+Direct3D
+Fragmentation
+System Analyst
+ADF
+File System
+Flaming
+Right Click
+UDDI
+Zone File
+Copy
+Site Map
+GNU
+SaaS
+Directory
+Enum
+RUP
+Navigation Bar
+Double Click
+DSLAM
+Field
+Console
+Minisite
+SMB
+Bookmark
+Floppy Disk
+Direct Digital Marketing
+IPX
+Configuration
+SIMM
+Dvorak Keyboard
+Remote User
+CISC
+PCMCIA
+LCD
+Applet
+Byte
+Secondary Storage
+Multiprocessing
+UAT
+NAT
+Output Device
+Newsgroup
+Syntax
+Spoofing
+Garbage Collection
+Nanometer
+Opacity
+Latency
+U
+Integer
+Session
+Utility
+Executable File
+DIMM
+Syntax Error
+Link
+Web Ring
+4K
+Import
+Infotainment
+Cron
+DMZ
+IP
+Codec
+Raw Data
+MAMP
+Coaxial Cable
+FILO
+SMS
+Mac OS
+Hover
+Extranet
+Pretest
+Multitasking
+Trinitron
+DCIM
+DLL
+Frozen
+IBM Compatible
+Autoresponder
+ATX
+DVD+R
+FAT32
+Cell
+Log File
+Swipe
+Dock
+Refresh Rate
+Hard Token
+SMM
+BIOS
+Data Management
+Parameter
+RSS
+Touchpad
+RAID
+eSATA
+jQuery
+XHTML
+404 Error
+Data Transfer Rate
+Compression
+Monitor
+Hertz
+Traceroute
+Computer
+TFT
+Thunderbolt
+iPod
+RTE
+CTR
+DAW
+Sound Card
+Token
+Yottabyte
+Winsock
+CPL
+Processor Core
+Partition
+Overclocking
+Half-Duplex
+Software
+Flexible
+VRAM
+IPS
+Interface
+Terabyte
+Bézier Curve
+iPad
+ICT
+Protocol
+Web Page
+NAS
+Smishing
+Keywords
+AIFF
+Windows XP
+Adapter
+Cyberspace
+Defragment
+Bounce
+CPS
+Multicasting
+Active Cell
+SPX
+Data
+Logic Error
+Struct
+Speakers
+MMS
+FiOS
+Brownfield
+Phishing
+Bare Metal Restore
+DMA
+HTTPS
+Database
+Document
+Bus
+Frame
+Laser Printer
+Truncate
+Tiger
+CRM
+Internal Hard Drive
+Soft Token
+QWERTY
+Keyboard
+LAMP
+TIFF
+Adware
+PCI-X
+File Server
+Silent Install
+Volume
+X86
+Registry
+Soft Copy
+IRC
+ICF
+3G
+Page View
+Spool
+VPN
+CIFS
+Apache
+ISP
+JavaScript
+PRAM
+Clean Room
+Spyware
+Batch Process
+WPA
+SSH
+Trackback
+Ripping
+Pharming
+Android
+Captcha
+OLE
+Sampling
+DLC
+Web 2.0
+Responsive Web Design
+Network
+Standby
+VFAT
+DVD+RW
+Grid Computing
+Kilobit
+Digital Camera
+SKU
+Jumper
+Card Reader
+CPC
+Lion
+Dithering
+Dial-up
+Exbibyte
+ROM
+Troll
+Clean Install
+Character
+Path
+DOS
+CGI
+APU
+IVR
+SDSL
+Servlet
+Firewire
+Client
+Greenfield
+Impression
+CPM
+Subdirectory
+SRAM
+Native File
+HFS
+Malware
+Copyright
+KVM Switch
+Title Bar
+Macro
+Ping
+ADSL
+WDDM
+DNS
+SMTP
+Tumblr
+Iframe
+Wiki
+Script
+Passcode
+Download
+CCD
+Full-Duplex
+End User
+LIFO
+Remote Access
+Log On
+Windows 10
+FPS
+Margin
+Surface
+Thread
+Optical Carrier
+FTP
+BASIC
+Rootkit
+Digital Signature
+Baseband
+Inbox
+Adaptive Content
+Symbolic Link
+Touchscreen
+Personal URL
+IP Address
+RFID
+iTunes
+Storage Capacity
+VDU
+CSS
+Version Control
+Halftone
+Freeware
+Ultra DMA
+VGA
+Internet of Things
+Meta Search Engine
+Multiplatform
+Disk Drive
+MySQL
+Node
+ISA
+Password
+OSD
+Flat File
+Bluetooth
+Memory
+GIS
+Resolution
+DSL
+Blacklist
+GUID
+Start Menu
 Encoding
+Push
+DAC
+Listserv
+Mirror
+TTL
+Format
+Samba
+VLE
+Font
+CAD
+Name Server
+Webmaster
+Address Bar
+PMU
+File
+ECC
+Output
