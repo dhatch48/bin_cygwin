@@ -1,0 +1,18 @@
+Usage:
+badblocks  [  -svwnfBX  ]  [  -b  block-size  ] [ -c blocks_at_once ] [ -e max_bad_blocks ]
+[ -d read_delay_factor ] [ -i input_file ] [ -o output_file ] [ -p num_passes ] [ -t test_pattern ]
+device [ last-block ] [ first-block ]
+
+# with -t specifies own pattern
+# without -t it defaults to 4 passes:
+   Hex    Binary
+1. 0xaa = 10101010 
+2. 0x55 = 01010101 
+3. 0xff = 11111111
+4. 0x00 = 00000000
+
+# Ex. for 512 sector size, 64K size at once, 3 passes
+badblocks -o badblocks_sda.txt -svw -b 512 -c 65536 -t 0xaa -t 0x55 -t 0x00 /dev/sda
+
+# Ex. for 4K sector size, 64K size at once, 3 passes
+badblocks -o badblocks_sda.txt -svw -b 4096 -c 65536 -t 0xaa -t 0x55 -t 0x00 /dev/sda
