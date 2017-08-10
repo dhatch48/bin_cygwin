@@ -5,7 +5,7 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
     logFileOrig='/Volumes/c$/dns.log'
     mountDir="${logFileOrig%/*}"
-    mountLocation='//dc4/c$'
+    smbLocation='smb://dc4/c$'
     dnsLookupFileOrig='/Volumes/c$/dnsEntries.txt'
     dnsWhiteList='/Volumes/c$/dns_whitelist_filter_list.txt'
 
@@ -21,13 +21,19 @@ dnsLookupFile="/tmp/dnsEntries.txt"
 
 # Mount smb location if not already mounted. Only for OSX
 if [[ "$OSTYPE" == "darwin"* ]] && ! mount | fgrep "dc4/c$ on $mountDir" > /dev/null; then
-    mkdir "$mountDir"
-    mount -t smbfs "$mountLocation" "$mountDir" && echo "$mountLocation mounted"
+    mountGood=$(osascript -e "try 
+        mount volume \"$smbLocation\"
+        set mountGood to true
+    on error
+        set mountGood to false
+    end try")
+    [[ $mountGood == true ]] && echo "$smbLocation mounted"
 fi
 
 # Make a local copy
 cp "$logFileOrig" "$logFileDestination"
-awk '$2 ~ /^[1-9]/ {print $2,substr($1, 1, length($1)-11)}' "$dnsLookupFileOrig" | sort -u > "$dnsLookupFile"
+# Remove carriage return and output ip and hostname
+awk '{ sub("\r$", "") } $NF ~ /^1/ && $1 ~ /^[a-zA-Z]/ {print $NF,$1}' "$dnsLookupFileOrig" | sort -u > "$dnsLookupFile"
 
 # Prepare filterList for use as regex
 # tr is used to remove carriage returns in case its dos format
