@@ -27,7 +27,12 @@ if [[ "$OSTYPE" == "darwin"* ]] && ! mount | fgrep "dc4/c$ on $mountDir" > /dev/
     on error
         set mountGood to false
     end try")
-    [[ $mountGood == true ]] && echo "$smbLocation mounted"
+    if [[ $mountGood == true ]]; then
+        echo "$smbLocation mounted"
+    else
+        echo "Mounting $smbLocation failed!"
+        exit 1
+    fi
 fi
 
 # Make a local copy
