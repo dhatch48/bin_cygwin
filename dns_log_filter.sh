@@ -37,8 +37,12 @@ fi
 
 # Make a local copy
 cp "$logFileOrig" "$logFileDestination"
-# Remove carriage return and output ip and hostname
-awk '{ sub("\r$", "") } $NF ~ /^1/ && $1 ~ /^[a-zA-Z]/ {print $NF,$1}' "$dnsLookupFileOrig" | sort -u > "$dnsLookupFile"
+
+# Create dns lookup file. Remove carriage return, and output ip and hostname only
+awk '
+    {sub("\r$", "")}
+    $NF ~ /^1/ && $1 ~ /^[a-zA-Z]/ && $1 !~ /^(DomainDnsZones|ForestDnsZones|dottek)/ {print $NF,$1}
+' "$dnsLookupFileOrig" | sort -u > "$dnsLookupFile"
 
 # Prepare filterList for use as regex
 # tr is used to remove carriage returns in case its dos format
