@@ -8,6 +8,7 @@ set -eo pipefail    # Turns on strict error options - exit on first error.
 #/ Options:
 #/      -h: Display this help message
 #/      -d: debug mode
+#/      -F: match literal "Fixed" string instead of regex. Uses grep -F
 #/      -q: surpress matches and only output archive file name
 
 # Basic helpers
@@ -17,11 +18,12 @@ die() { out "[FATAL] $1" && [ "$2" ] && [ "$2" -ge 0 ] && exit "$2" || exit 1; }
 usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
 opt='--color=auto'
 
-while getopts "dhq" o; do
+while getopts "Fdhq" o; do
     case "$o" in
         d) DEBUG=1 ;;
         h) usage ;;
-        q) opt='-q' ;;
+        F) opt+=' -F' ;;
+        q) opt+=' -q' ;;
     esac
 done
 shift $((OPTIND-1))
