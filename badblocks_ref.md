@@ -33,14 +33,15 @@ device [ last-block ] [ first-block ]`
     -X
         Internal flag only to be used by e2fsck(8) and mke2fs(8). It bypasses the exclusive mode in-use device safety check.
 
-### Defualt 4 pattern tests
+### Defualt 4 pattern tests in write-mode
 - with -t specifies own pattern
 - without -t in write-mode defaults to 4 passes:
-   Hex    Binary
-1. 0xaa = 10101010 
-2. 0x55 = 01010101 
-3. 0xff = 11111111
-4. 0x00 = 00000000
+|Pass| Hex  | Binary  |
+|----|------|---------|
+|1   | 0xaa | 10101010|
+|2   | 0x55 | 01010101|
+|3   | 0xff | 11111111|
+|4   | 0x00 | 00000000|
 
 ### Examples - My usage for improved speed
 Destructive mode, output saved to file, 512 sector size, 64K size at once, 3 pattern test
