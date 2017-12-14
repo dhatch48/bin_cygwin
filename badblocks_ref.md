@@ -36,6 +36,7 @@ device [ last-block ] [ first-block ]`
 ### Defualt 4 pattern tests in write-mode
 - with -t specifies own pattern
 - without -t in write-mode defaults to 4 passes:
+
 Pass| Hex  | Binary
 ----|------|---------
 1   | 0xaa | 10101010
