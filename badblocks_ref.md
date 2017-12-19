@@ -46,7 +46,9 @@ Pass| Hex  | Binary
 
 ### Examples - My usage for improved speed
 Destructive mode, output saved to file, 512 sector size, 64K size at once, 3 pattern test
+
 `badblocks -o badblocks_sda.txt -svw -b 512 -c 65536 -t 0xaa -t 0x55 -t 0x00 /dev/sda`
 
 Destructive mode, output saved to file, 4K sector size, 64K size at once, 2 pattern test
+
 `badblocks -o badblocks_sda.txt -svw -b 4096 -c 65536 -t 0xff -t 0x00 /dev/sda`
