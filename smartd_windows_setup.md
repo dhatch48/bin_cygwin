@@ -9,8 +9,11 @@
 6. Comment out line (23) containing "DEVICESCAN" by adding a # at the beginning
 7. Go to the very bottom of the file and add your own config like so. Replace
    with correct email address to recieve notification:
-    `/dev/sda -m user@gmail.com -M test
-    DEVICESCAN -a -o on -S on -s (S/../.././02|L/../../7/04) -m user@gmail.com`
+   
+      `/dev/sda -m user@gmail.com -M test`
+      
+      `DEVICESCAN -a -o on -S on -s (S/../.././02|L/../../7/04) -m user@gmail.com`
+      
 8. Save the file
 9. Click start > smartmontools > smartd Examples > smartd_mailer.conf.ps1
    (create, edit)
@@ -27,6 +30,11 @@
 16. Edit the smartd.conf file once more to comment out the test email line:
         `#/dev/sda -m user@gmail.com -M test`
 17. Save the file and you're DONE!
+
+If you see powershell errors like:
+`+ FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.SendMailMessage`
+
+Check your powershell version: `$PSVersionTable` The script requires powershell v.3 or newer
 
 For more info on the config or to help fix errors in the log referrence the
 manual:
