@@ -21,6 +21,7 @@ Cygwin - packages to install
     python3
     rsync
     smartmontools
+    sox
     tmux
     unzip
     vim
