@@ -9,6 +9,7 @@ Cygwin - packages to install
     ddrescue
     dejavu-fonts
     dos2unix
+    e2fsprogs - badblocks
     git
     git-completion
     jq
