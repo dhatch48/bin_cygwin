@@ -53,60 +53,81 @@ while ($row_p = $phone_sth->fetchrow_hashref()) {
             Dial,
             bw,
             sd,
-            Priority
+            Priority,
+            Ringtone
         FROM
             (
                 (
-                SELECT
-                    Description,
-                    Dial,
-                    bw,
-                    @sd1 := @sd1 + 1 AS sd,
-                    Priority
-                FROM
-                    (
                     SELECT
-                    IF
-                        (
-                            ( phone_quick.FirstName IS NULL OR phone_quick.FirstName = "" )
-                            AND ( phone_quick.LastName IS NULL OR phone_quick.LastName = "" ),
-                            CONCAT_WS( " ", phone_dir.FirstName, phone_dir.LastName ),
-                            CONCAT_WS( " ", phone_quick.FirstName, phone_quick.LastName )
-                        ) AS Description,
-                        phone_quick.Dial,
-                        phone_quick.bw,
-                        phone_quick.Priority
-                    FROM
-                        phone_quick
-                        LEFT JOIN phone_dir ON phone_dir.Dial = phone_quick.Dial
-                    WHERE
-                        Extension = "'.$ext.'"
-                    ORDER BY
+                        Description,
+                        Dial,
+                        bw,
+                        @sd1 := @sd1 + 1 AS sd,
                         Priority,
-                        Description
-                    ) a
-                ) UNION
-                (
-                SELECT
-                    Description,
-                    Dial,
-                    bw,
-                    @sd2 := @sd2 + 1 AS sd,
-                    Priority
-                FROM
-                    ( SELECT
-                            CONCAT_WS( " ", FirstName, LastName ) AS Description,
+                        Ringtone
+                    FROM
+                        (
+                            SELECT
+
+                            IF (
+                                (
+                                    phone_quick.FirstName IS NULL
+                                    OR phone_quick.FirstName = ""
+                                )
+                                AND (
+                                    phone_quick.LastName IS NULL
+                                    OR phone_quick.LastName = ""
+                                ),
+                                CONCAT_WS(
+                                    " ",
+                                    phone_dir.FirstName,
+                                    phone_dir.LastName
+                                ),
+                                CONCAT_WS(
+                                    " ",
+                                    phone_quick.FirstName,
+                                    phone_quick.LastName
+                                )
+                            ) AS Description,
+                            phone_quick.Dial,
+                            phone_quick.bw,
+                            phone_quick.Priority,
+                            phone_quick.Ringtone
+                        FROM
+                            phone_quick
+                        LEFT JOIN phone_dir ON phone_dir.Dial = phone_quick.Dial
+                        WHERE
+                            Extension = '.$ext.'
+                        ORDER BY
+                            Priority,
+                            Description
+                        ) a
+                )
+                UNION
+                    (
+                        SELECT
+                            Description,
                             Dial,
                             bw,
-                            Priority
+                            @sd2 := @sd2 + 1 AS sd,
+                            Priority,
+                            NULL AS Ringtone
                         FROM
-                            phone_dir
-                        WHERE
-                            Access <= '.$acc.'
-                        ORDER BY
-                            Priority, Description
-                    ) b
-                )
+                            (
+                                SELECT
+                                    CONCAT_WS(" ", FirstName, LastName) AS Description,
+                                    Dial,
+                                    bw,
+                                    Priority
+                                FROM
+                                    phone_dir
+                                WHERE
+                                    Access <= '.$acc.'
+                                ORDER BY
+                                    Priority,
+                                    Description
+                            ) b
+                    )
             ) c
         ORDER BY
             Priority,
@@ -120,6 +141,7 @@ while ($row_p = $phone_sth->fetchrow_hashref()) {
         my $dial = $row_d->{Dial};
         my $bw = $row_d->{bw};
         my $sd = $row_d->{sd};
+        my $rt = $row_d->{Ringtone} || 'ringerdefault';
         print OUTPUTFILE "<item>";
         if (length($dial) == 3) {print OUTPUTFILE "<fn>$dial</fn>";}
         print OUTPUTFILE "<ln>$description</ln>";
@@ -127,7 +149,7 @@ while ($row_p = $phone_sth->fetchrow_hashref()) {
         print OUTPUTFILE "<sd>$sd</sd>";
         #print OUTPUTFILE "<lb>$column5</lb>";
         #print OUTPUTFILE "<pt>$column6</pt>";
-        print OUTPUTFILE "<rt>ringerdefault</rt>";
+        print OUTPUTFILE "<rt>$rt</rt>";
         #print OUTPUTFILE "<dc>$column8</dc>";
         if (length($dial) < 5) {print OUTPUTFILE "<ad>0</ad>";}
         if (length($dial) < 5) {print OUTPUTFILE "<ar>0</ar>";}
