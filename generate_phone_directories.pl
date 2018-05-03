@@ -165,8 +165,8 @@ exit;
 
 #CREATE TABLE `phone_dir` (
 #  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
-#  `FirstName` varchar(15) DEFAULT NULL,
-#  `LastName` varchar(15) DEFAULT NULL,
+#  `FirstName` varchar(40) DEFAULT NULL,
+#  `LastName` varchar(40) DEFAULT NULL,
 #  `Dial` varchar(25) DEFAULT NULL,
 #  `Priority` int(3) unsigned DEFAULT NULL,
 #  `Access` int(1) unsigned DEFAULT NULL,
@@ -178,9 +178,10 @@ exit;
 #CREATE TABLE `phone_quick` (
 #  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
 #  `Extension` int(4) unsigned DEFAULT NULL,
-#  `FirstName` varchar(15) DEFAULT NULL,
-#  `LastName` varchar(15) DEFAULT NULL,
+#  `FirstName` varchar(40) DEFAULT NULL,
+#  `LastName` varchar(40) DEFAULT NULL,
 #  `Dial` varchar(25) DEFAULT NULL,
+#  `Ringtone`  varchar(40) DEFAULT NULL,
 #  `Priority` int(3) DEFAULT NULL,
 #  `bw` int(1) DEFAULT '1',
 #  PRIMARY KEY (`id`)
