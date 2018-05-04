@@ -223,3 +223,31 @@ exit;
 #  PRIMARY KEY (`id`)
 #) ENGINE=InnoDB AUTO_INCREMENT=272 DEFAULT CHARSET=utf8;
 
+##### Ringtone Lookup #####
+# <rt>      Name
+# ringer1	Silent Ring
+# ringer2	Low Trill
+# ringer3	Low Double Trill
+# ringer4	Medium Trill
+# ringer5	Medium Double Trill
+# ringer6	High Trill
+# ringer7	High Double Trill
+# ringer8	Highest Trill
+# ringer9	Highest Double Trill
+# ringer10	Beeble
+# ringer11	Triplet
+# ringer12	Ringback-style
+# ringer13	Low Trill Precedence
+# ringer14	Ring Splash
+# ringer15	Ring16
+# ringer16	Cisco_Bass
+# ringer17	Cisco_Jamaica
+# ringer18	Cisco_Office
+# ringer19	FOTC_Theme
+# ringer20	Holy_Grail
+# ringer21	Imperial_March
+# ringer22	James_Bond
+# ringer23	Jetsons_Doorbell
+# ringer24	Old_Phone
+# ringer25	not used
+
