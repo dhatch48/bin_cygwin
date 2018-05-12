@@ -9,6 +9,10 @@ use DateTime;
 use Archive::Zip;
 use Net::FTP;
 use LWP::Simple;
+use Getopt::Long;
+
+my $manualMode = 0;
+GetOptions ('manual!' => \$manualMode); # If manual option is passed, skip uploading files to FTP server
 
 my $dt = DateTime->now->set_time_zone( 'America/Los_Angeles' );
 
@@ -19,16 +23,17 @@ my $user = "rgeis";
 my $password = "frog418";
 
 # PERL CONNECT()
-#my $dbh = Mysql->connect($hostname, $database, $user, $password);
 my $dsn = "DBI:mysql:database=$database;host=$hostname;" ;
 my $dbh = DBI->connect($dsn, $user, $password) ;
 
 # FTP to provisioning server
 my $ftp = Net::FTP->new('p.ztelco.com', Debug => 0)
     or die "Cannot connect to FTP server: $0";
-$ftp->login('PlcmSpIp','PlcmSpIp')
-    or die "Cannot login ", $ftp->message;
-$ftp->cwd('/Directory');
+if (! $manualMode) {
+    $ftp->login('PlcmSpIp','PlcmSpIp')
+        or die "Cannot login ", $ftp->message;
+    $ftp->cwd('/Directory');
+}
 
 # ...
 my $phone_sql = 'SELECT Extension, MacAddress, phone_ext.Access, CONCAT_WS( " ", FirstName, LastName ) AS Description FROM phone_ext LEFT JOIN phone_dir on phone_dir.Dial = phone_ext.Extension';
@@ -171,14 +176,17 @@ while ($row_p = $phone_sth->fetchrow_hashref()) {
 
     close (OUTPUTFILE);
 
-    $ftp->put("$mac-directory.xml");
+    $manualMode || $ftp->put("$mac-directory.xml");
 }
 
 $dbh->disconnect;
-$ftp->quit;
 
-### Force all phones to check and load new config
-my $result = get('http://rayzist.zray.net/check-config.php?run=1');
+if (! $manualMode) {
+    $ftp->quit;
+
+    ### Force all phones to check and load new config
+    my $result = get('http://rayzist.zray.net/check-config.php?run=1');
+}
 
 
 my $zip = Archive::Zip->new();
