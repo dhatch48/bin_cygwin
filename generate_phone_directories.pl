@@ -3,7 +3,6 @@
 use locale;             # Ensure correct charset for eg 'uc()'
 use DBI;                # Database connections
 use strict;             # Enforce declarations
-use strict;
 use warnings;
 use DateTime;
 use Archive::Zip;
