@@ -17,7 +17,7 @@ Cygwin - packages to install
     nano
     nc
     openssh
-    procps - uptime and ps
+    procps-ng - uptime
     python2 - interpreter
     python3
     rsync
