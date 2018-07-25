@@ -17,6 +17,14 @@ Cygwin - packages to install
     nano
     nc
     openssh
+    perl
+    perl-Archive-Zip
+    perl-DBD-mysql
+    perl-DBI
+    perl-DateTime
+    perl-Net-HTTP
+    perl-libwww-perl
+    perl_base
     procps-ng - uptime
     python2 - interpreter
     python3
