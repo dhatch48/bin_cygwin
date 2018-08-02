@@ -1,0 +1,1 @@
+openfiles /query /s vm7 /FO CSV /V | ConvertFrom-Csv | Select-Object "Accessed By", "Open Mode", "Open File (Path\executable)" | Where-Object {$_."Open Mode" -like "Write*" -and $_."Open File (Path\executable)" -like "*MAS90*"} | Group-Object "Accessed By" |Format-Table -AutoSize

@@ -1,0 +1,1 @@
+powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Unrestricted -File "C:\Users\administrator.DOTTEK\Desktop\close_sage.ps1"
