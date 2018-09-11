@@ -16,6 +16,7 @@ Cygwin - packages to install
     lynx - text based browser
     nano
     nc
+    ncdu
     openssh
     perl
     perl-Archive-Zip
