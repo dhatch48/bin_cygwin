@@ -28,7 +28,9 @@ Cygwin - packages to install
     perl_base
     procps-ng - uptime
     python2 - interpreter
+    python2-pip
     python3
+    python3-pip
     rsync
     smartmontools
     sox
