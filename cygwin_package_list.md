@@ -34,7 +34,7 @@ Cygwin - packages to install
     rsync
     smartmontools
     sox
-    the_silver_searcher
+    the_silver_searcher - ag
     tmux
     unzip
     vim
