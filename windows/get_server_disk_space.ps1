@@ -1,6 +1,6 @@
 ﻿# First lets create a text file, where we will later save the freedisk space info 
 $freeSpaceFileName = "d:\Users\david\Documents\myScripts\disk_space.htm"
-$serverlist = @("vm2", "vm3", "vm7", "dc4", "dc5", "ai-exporter")
+$serverlist = @("vm2", "vm3", "vm5", "vm7", "dc4", "dc5", "ai-exporter")
 $warning = 50
 $critical = 10
 $date = ( get-date ).ToString('yyyy-MM-dd') 
