@@ -16,7 +16,7 @@ GetOptions ('manual!' => \$manualMode); # If manual option is passed, skip uploa
 my $dt = DateTime->now->set_time_zone( 'America/Los_Angeles' );
 
 # MYSQL CONFIG VARIABLES
-my $hostname = "VM2";
+my $hostname = "VM5";
 my $database = "Rayzist";
 my $user = "rgeis";
 my $password = "frog418";
