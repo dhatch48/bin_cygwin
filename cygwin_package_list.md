@@ -1,5 +1,8 @@
 Cygwin - packages to install
 =============================
+install example:
+
+`cyg-get git,vim,wget,curl,zip`
 
     bash-completion
     binutils
