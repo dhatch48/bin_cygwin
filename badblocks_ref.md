@@ -33,7 +33,7 @@ device [ last-block ] [ first-block ]`
     -X
         Internal flag only to be used by e2fsck(8) and mke2fs(8). It bypasses the exclusive mode in-use device safety check.
 
-### Defualt 4 pattern tests in write-mode
+### Default 4 pattern tests in write-mode
 - with -t specifies own pattern
 - without -t in write-mode defaults to 4 passes:
 
