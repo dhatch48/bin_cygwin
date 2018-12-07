@@ -18,8 +18,8 @@ die() { out "[FATAL] $1" && [ "$2" ] && [ "$2" -ge 0 ] && exit "$2" || exit 1; }
 usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
 opt='--color=auto'
 
-while getopts "Fdhq" o; do
-    case "$o" in
+while getopts "Fdhq" opt; do
+    case "$opt" in
         d) DEBUG=1 ;;
         h) usage ;;
         F) opt+=' -F' ;;
