@@ -17,8 +17,8 @@ die() { out "[FATAL] $1" && [ "$2" ] && [ "$2" -ge 0 ] && exit "$2" || exit 1; }
 usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
 
 # Parse options
-while getopts "dh" o; do
-    case $0 in
+while getopts "dh" opt; do
+    case "$opt" in
         d) DEBUG=1 ;;
         h) usage ;;
     esac
