@@ -1,6 +1,8 @@
 Cygwin - packages to install
 =============================
-install example:
+Cygwin Mirrors in California: `mirrors.sonic.net(ftp), mirrors.kernel.org(http), mirrors.sonic.net(http)`
+
+Install example:
 
 `cyg-get git,vim,wget,curl,zip`
 
