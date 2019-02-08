@@ -1,0 +1,30 @@
+%HKEY_CURRENT_USER\Volatile Environment\LOCALAPPDATA%
+
+%HKEY_CURRENT_USER\Volatile Environment\APPDATA%
+
+%HKEY_CURRENT_USER\Volatile Environment\USERPROFILE%
+
+%HKEY_CURRENT_USER\Environment\TEMP%
+
+
+With registry values, omit backslash (\) after closing % and then use forward slash (/) for subdirectories
+example:
+%HKEY_CURRENT_USER\Environment\TEMP%*/G2MCoreInstExtractor.exe
+%HKEY_CURRENT_USER\Environment\TEMP%*/GoTo Opener.exe
+%HKEY_CURRENT_USER\Environment\TEMP%*/GoToOpener.msi
+to match
+d:\Users\david\AppData\Local\Temp\B634ADEA-EA96-4A96-8DB3-5B55C7390569\G2MCoreInstExtractor.exe
+D:\Users\david\AppData\Local\Temp\4611B3B2-AAF8-40C4-9EC2-867FDA9AA9FE\GoTo Opener.exe
+D:\Users\david\AppData\Local\Temp\4611B3B2-AAF8-40C4-9EC2-867FDA9AA9FE\GoToOpener.msi
+
+ref:
+https://serverfault.com/questions/557919/windows-gpo-software-restrictions-policy-not-working-with-temp-variable/
+
+old
+%USERPROFILE%\AppData\Local\Mozilla\updates\*\updates\0\updater.exe
+new
+%HKEY_CURRENT_USER\Volatile Environment\LOCALAPPDATA%Mozilla/updates/*/updates/0/updater.exe
+
+
+%LOCALAPPDATA%\Apps\2.0\*\*\fede..tion_*\Fedex Web Tools.exe
+%HKEY_CURRENT_USER\Volatile Environment\LOCALAPPDATA%Apps/2.0/*/*/fede..tion_*/Fedex Web Tools.exe
