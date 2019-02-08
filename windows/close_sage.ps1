@@ -1,4 +1,5 @@
-﻿$Host.UI.RawUI.BufferSize = New-Object Management.Automation.Host.Size (500, 1000)
+﻿### Increase buffer width to fit output
+$Host.UI.RawUI.BufferSize = New-Object Management.Automation.Host.Size (500, 1000)
 $filePath = "$env:USERPROFILE\Desktop\close_sage.log"
 $timestamp = Get-Date
 $systems = @('reception-pc', 'shipping2-pc', 'david-pc', 'edelia-pc', 'kathy-pc', 'vm7')
