@@ -2,9 +2,9 @@
 
 set -eo pipefail    # Turns on strict error options - exit on first error.
 
-#/ Usage: printProj.sh [OPTION] FILE
+#/ Usage: print_project.sh [OPTION] FILE
 #/ Description:
-#/ Examples: printProj.sh PROJECTNAME
+#/ Examples: print_project.sh PROJECTNAME
 #/ Options:
 #/      -h: Display this help message
 #/      -d: debug mode
