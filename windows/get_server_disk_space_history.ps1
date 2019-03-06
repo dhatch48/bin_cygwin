@@ -1,7 +1,7 @@
 ﻿# First lets create a text file, where we will later save the freedisk space info 
 $today = ( get-date ).ToString('yyyy-MM-dd') 
 $freeSpaceFileName = "d:\Users\david\Documents\server_storage_reports\"+$today+"_disk_space.htm"
-$serverlist = @("vm2", "vm3", "dc4", "dc5")
+$serverlist = @("vm2", "vm3", "vm5", "vm7", "dc4", "dc5")
 $warning = 50
 $critical = 10
 #$Threshold = 5; ### Free space (GB)
