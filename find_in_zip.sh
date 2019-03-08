@@ -16,7 +16,7 @@ out() { echo "$(date '+%Y-%m-%d %H:%M:%S') $@"; }
 err() { out "[ERROR] $@" 1>&2; echo; }
 die() { out "[FATAL] $1" && [ "$2" ] && [ "$2" -ge 0 ] && exit "$2" || exit 1; }
 usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
-opt='--color=auto'
+grepOpt='--color=auto'
 
 while getopts "Fdhq" opt; do
     case "$opt" in
@@ -38,7 +38,7 @@ if [[ $# -ge 2 ]]; then
     shift
     for i in "$@"; do 
         if [[ -f $i && $i = *.zip ]]; then
-            grep $opt "$file" < <(unzip -l "$i") && echo "$i"
+            grep $grepOpt "$file" < <(unzip -l "$i") && echo "$i"
         else
             err "Incorrect file given: $i"
         fi
