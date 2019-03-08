@@ -22,8 +22,8 @@ while getopts "Fdhq" opt; do
     case "$opt" in
         d) DEBUG=1 ;;
         h) usage ;;
-        F) opt+=' -F' ;;
-        q) opt+=' -q' ;;
+        F) grepOpt+=' -F' ;;
+        q) grepOpt+=' -q' ;;
     esac
 done
 shift $((OPTIND-1))
