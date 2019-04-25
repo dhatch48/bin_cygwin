@@ -11,8 +11,9 @@ echo Drive + path    : %~dp0
 echo File name + ext : %~nx0
 echo File short      : %~fs0
 
-echo Var1 DP         : %~dp1
-echo Var2 DP         : %~dp2
+echo Var1            : %1
+echo Var1 Full Path  : %~f1
+echo Var2 Full Path  : %~f2
 
 
 
