@@ -1,0 +1,75 @@
+You can access any of the Control Panel Tools by using RunAs against the control.exe file and the associated CPL app. For this you can use the local PC administrator account or a network account with workstation admin rights.
+
+Example: Add/Remove Programs 
+runas /user:_ADMINACCT_ "control.exe appwiz.cpl"
+
+Other Options: 
+Accessibility Controls: control.exe access.cpl 
+Add Hardware Wizard: control.exe hdwwiz.cpl 
+Add/Remove Programs: control.exe appwiz.cpl 
+Administrative Tools: control.exe admintools 
+Automatic Updates: wuaucpl.cpl 
+Date and Time Properties: timedate.cpl 
+Direct X control.exe Panel: directx.cpl 
+Display Properties (w/Appearance Tab Preselected): control.exe color 
+Display Properties: control.exe desktop 
+Display Properties: control.exe desk.cpl 
+Folders Properties: control.exe folders 
+Fonts: control.exe fonts 
+Game Controllers: control.exe joy.cpl 
+Internet Properties: control.exe inetcpl.cpl 
+Java control.exe Panel (If Installed): jpicpl32.cpl 
+Keyboard Properties: control.exe keyboard 
+Mouse Properties: control.exe main.cpl OR control.exe mouse 
+Network Connections: control.exe ncpa.cpl OR control.exe netconnections 
+Network Setup Wizard: control.exe netsetup.cpl 
+ODBC Data Source Administrator: control.exe odbccp32.cpl 
+Password Properties: control.exe password.cpl 
+Phone and Modem Options: control.exe telephon.cpl 
+Power Configuration: control.exe powercfg.cpl 
+Printers and Faxes: control.exe printers 
+Quicktime (If Installed): control.exe QuickTime.cpl 
+Regional Settings: control.exe intl.cpl 
+Scanners and Cameras: control.exe sticpl.cpl 
+Scheduled Tasks: control.exe schedtasks 
+Screen Saver Panel: control.exe DESK.CPL ,@ScreenSaver 
+Security Center: control.exe wscui.cpl 
+Sounds and Audio: control.exe mmsys.cpl 
+System Properties: control.exe sysdm.cpl 
+User Account Management: control.exe nusrmgr.cpl 
+Windows Firewall: control.exe firewall.cpl
+
+NON Control.exe Commands 
+Date/time applet, Time Zone tab: RUNDLL32 SHELL32.DLL,Control_RunDLL TIMEDATE.CPL,@0,1 
+Desktop applet, Screensaver tab: RUNDLL32 SHELL32.DLL,Control_RunDLL DESK.CPL,@0,1 
+Network applet, Adapters tab: RUNDLL32 SHELL32.DLL,Control_RunDLL NCPA.CPL,@0,3 
+Network applet, Protocols tab: RUNDLL32 SHELL32.DLL,Control_RunDLL NCPA.CPL,@0,2 
+System applet, Environment tab: RUNDLL32 SHELL32.DLL,Control_RunDLL SYSDM.CPL,@0,2
+
+Other Examples:
+Elevate Permission to Stop/Restart Services
+runas /user:_ADMINACCT_ "mmc.exe \"services.msc\""
+
+Shutdown a PC from the Command Prompt
+runas /user:_ADMINACCT_ "shutdown -s -t 0"
+
+Restart a PC from the Command Prompt
+runas /user:_ADMINACCT_ "shutdown -r -t 0"
+
+Elevate Permissions to Edit the Registry
+runas /user:_ADMINACCT_ "regedit.exe"
+
+Elevate Permissions to run CMD commands
+runas /user:_ADMINACCT_ "cmd.exe"
+
+Elevate Permissions to Run Network Admin CMD commands
+runas /user:domain\_ADMINACCT_ "cmd.exe"
+
+Elevate Permissions to Modify Local Policy
+runas /user:_ADMINACCT_ "mmc.exe \"gpmc.msc\""
+
+Elevate Permissions to View Security Events
+runas /user:_ADMINACCT_ "eventvwr.exe"
+
+Elevate Permissions to Manage Network Computers
+runas /user:domain\_ADMINACCT_ "mmc.exe \"compmgmt.msc\""
