@@ -1,6 +1,10 @@
 # Allow local created scripts to run and remote scripts if they are signed
 #Set-ExecutionPolicy RemoteSigned
 
+echo "Find the command you want"
+Get-Command -Name *service*
+
+echo ""
 echo "Get help for a command"
 ls -?
 
@@ -20,7 +24,10 @@ echo "Or list only the properties"
 $myDate | Select-Object -Property *
 
 # Get and kill process named notepad
-#Get-Process -Name notepad | Kill
+#Get-Process -Name notepad | Stop-Process
 
-#or just kill all that start with notepad
+# or just kill all that start with notepad
 #kill -Name notepad*
+
+# Get and stop a service
+#Get-Service "bonjour service" | Stop-Service
