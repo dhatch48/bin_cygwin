@@ -31,3 +31,9 @@ $myDate | Select-Object -Property *
 
 # Get and stop a service
 #Get-Service "bonjour service" | Stop-Service
+
+# Test connectivity to multiple computers once (ping)
+#Test-Connection -ComputerName Server01, itadmin01v, dt0101 -count 1
+
+# Test if remote port is open (tnc for short)
+#Test-NetConnection 192.168.1.21 -Port 3389
