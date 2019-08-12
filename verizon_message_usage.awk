@@ -11,6 +11,6 @@ BEGIN {
     #printf "%-14s %-15s %-7s %-8s %-7s %-8s\n", $1,$4,$31,$32,$39,$40
 #}
 $31+$32+$39+$40 > 30 && 
-$4 != "TRACY RITZER" && $4 != "LEE HENDERSON" && $4 != "JOE STEPHENSON" { 
+$4 != "TRACY RITZER" && $4 != "P REYES" && $4 != "LEE HENDERSON" && $4 != "JOE STEPHENSON" { 
     printf "%-14s %-15s %-7d %-8d %-7d %-8d %-7d\n", $1,$4,$31,$32,$39,$40,$31+$32+$39+$40
 }
