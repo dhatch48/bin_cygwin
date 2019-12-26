@@ -1,5 +1,7 @@
 # Use less instead of more
-Set-Alias more less.exe
+if (get-command less.exe -errorAction SilentlyContinue) {
+    Set-Alias more less.exe
+}
 
 # Exit with ctrl+d
 Set-PSReadlineKeyHandler -Chord Ctrl+d -Function DeleteCharOrExit
