@@ -1,10 +1,15 @@
+# Create PS profile file
+#New-Item -path $profile -type file
+
 # Use less instead of more
 if (get-command less.exe -errorAction SilentlyContinue) {
     Set-Alias more less.exe
 }
 
 # Exit with ctrl+d
-Set-PSReadlineKeyHandler -Chord Ctrl+d -Function DeleteCharOrExit
+if (get-command Set-PSReadlineKeyHandler -errorAction SilentlyContinue) {
+    Set-PSReadlineKeyHandler -Chord Ctrl+d -Function DeleteCharOrExit
+}
 
 function Get-Path {
 	$env:Path.Split(";")
