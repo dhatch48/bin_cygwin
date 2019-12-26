@@ -14,6 +14,10 @@ function elevate-cmd {
 }
 new-alias sudo elevate-cmd
 
+function down {
+	cd $HOME\Downloads
+}
+
 # Welcome
 "Welcome {0}, to Powershell {1}" -f $ENV:username,($PSVersionTable.PSVersion)
 "Today is {0:F}`n" -f (get-date)
