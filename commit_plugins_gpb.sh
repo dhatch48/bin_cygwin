@@ -1,6 +1,10 @@
 #!/bin/bash
 #set -x
 
+### Create inputFile with wp cli command shown here:
+# wp plugin update --all --format=csv > ~/bin/plugin.csv
+###
+
 shopt -s expand_aliases
 alias wp=~/bin/wp-cli.phar
 
