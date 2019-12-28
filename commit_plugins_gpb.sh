@@ -13,6 +13,10 @@ inputFile=${1:-$HOME/bin/plugin.csv}
 
 while IFS= read -r line; do
     pluginName=$(awk -F, '{print $1}' <<< "$line")
+    if [ "$pluginName" = "name" ]; then
+        continue
+    fi
+
     oldVersion=$(awk -F, '{print $2}' <<< "$line")
     newVersion=$(awk -F, '{print $3}' <<< "$line")
     pluginTitle=$(cd "$pluginDir"; wp plugin get $pluginName --fields=title --format=csv | tail -1 | cut -d',' -f2)
