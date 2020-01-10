@@ -17,7 +17,7 @@ function Get-Path {
 new-alias path Get-Path
 
 function elevate-cmd {
-	start "$args" -verb runas
+	Start-Process @args -verb runas
 }
 new-alias sudo elevate-cmd
 
