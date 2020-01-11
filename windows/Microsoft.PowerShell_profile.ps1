@@ -1,5 +1,5 @@
 # Create PS profile file
-#New-Item -path $profile -type file
+#New-Item -path $profile -type file -Force
 
 # Use less instead of more
 if (get-command less.exe -errorAction SilentlyContinue) {
