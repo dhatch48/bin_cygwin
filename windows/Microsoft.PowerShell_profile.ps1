@@ -34,6 +34,18 @@ function find-adcomputer {
 }
 new-alias fac find-adcomputer
 
+function get-uninstallString {
+    Param(
+        [Parameter(Mandatory=$true,
+        ValueFromPipeline=$true)]
+        [String]
+        $searchName
+    )
+    Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | 
+        Get-ItemProperty | Where-Object {$_.DisplayName -match "$searchName" } |
+        Format-List -Property DisplayName, DisplayVersion, UninstallString, PSPath
+}
+
 # Welcome
 "Welcome {0}, to Powershell {1}" -f $ENV:username,($PSVersionTable.PSVersion)
 "Today is {0:F}`n" -f (get-date)
