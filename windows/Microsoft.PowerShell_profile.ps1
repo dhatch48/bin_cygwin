@@ -12,21 +12,25 @@ if (get-command Set-PSReadlineKeyHandler -errorAction SilentlyContinue) {
 }
 
 function Get-Path {
-	$env:Path.Split(";")
+    $env:Path.Split(";")
 }
 new-alias path Get-Path
 
 function elevate-cmd {
-	Start-Process @args -verb runas
+    Start-Process @args -verb runas
 }
 new-alias sudo elevate-cmd
 
 function down {
-	cd $HOME\Downloads
+    cd $HOME\Downloads
 }
 
 function nu {
     net user /domain $args
+}
+
+function nu-reset {
+    net user $args Police123 /logonpasswordchg:yes /active:yes /domain
 }
 
 function find-adcomputer {
@@ -41,7 +45,7 @@ function get-uninstallString {
         [String]
         $searchName
     )
-    Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall | 
+    Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
         Get-ItemProperty | Where-Object {$_.DisplayName -match "$searchName" } |
         Format-List -Property DisplayName, DisplayVersion, UninstallString, PSPath
 }
