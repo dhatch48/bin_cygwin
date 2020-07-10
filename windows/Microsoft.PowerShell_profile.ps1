@@ -50,6 +50,10 @@ function get-uninstallString {
         Format-List -Property DisplayName, DisplayVersion, UninstallString, PSPath
 }
 
+function install-powershell {
+    Invoke-Expression "& { $(Invoke-RestMethod https://aka.ms/install-powershell.ps1) } -UseMSI"
+}
+
 # Welcome
 "Welcome {0}, to Powershell {1}" -f $ENV:username,($PSVersionTable.PSVersion)
 "Today is {0:F}`n" -f (get-date)
