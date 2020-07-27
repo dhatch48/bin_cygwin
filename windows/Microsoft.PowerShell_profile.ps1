@@ -1,14 +1,29 @@
 # Create PS profile file
 #New-Item -path $profile -type file -Force
 
+# Don't save commands that start with space
+function Check-HistoryCommand($command) {
+    if ($command -like ' *') {
+        return $false
+    }
+    return $true
+}
+
+Set-PSReadLineOption -AddToHistoryHandler (Get-Item Function:Check-HistoryCommand).ScriptBlock
+
+# Set PSReadline Options and bindings
+if (get-command Set-PSReadlineKeyHandler -errorAction SilentlyContinue) {
+    Set-PSReadlineOption -EditMode vi -BellStyle None -ViModeIndicator Prompt
+    Set-PSReadlineKeyHandler -ViMode Insert -Chord Ctrl+d -Function DeleteCharOrExit
+    Set-PSReadLineKeyHandler -ViMode Insert -Chord UpArrow -Function HistorySearchBackward
+    Set-PSReadLineKeyHandler -ViMode Insert -Chord DownArrow -Function HistorySearchForward
+}
+
 # Use less instead of more
 if (get-command less.exe -errorAction SilentlyContinue) {
     Set-Alias more less.exe
-}
-
-# Exit with ctrl+d
-if (get-command Set-PSReadlineKeyHandler -errorAction SilentlyContinue) {
-    Set-PSReadlineKeyHandler -Chord Ctrl+d -Function DeleteCharOrExit
+    # for PS core
+    $env:PAGER = 'less.exe'
 }
 
 function Get-Path {
