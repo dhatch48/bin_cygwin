@@ -12,7 +12,6 @@ destDir=~/public_html/test/
 read -p "Deleting all files in $destDir ...Continue? (y/n): " -n 1 -r
 echo
 if [[ $REPLY = [yY] ]]; then
-    #rm -rf "$destDir/".[!.]* "$destDir/"*
     rm -rf "$destDir"
     mkdir "$destDir"
     if [[ -z $(ls -A "$destDir") ]]; then
@@ -57,8 +56,8 @@ wp db export prod.sql --path="$sourceDir"
 wp db reset --yes
 wp db import prod.sql && rm -f prod.sql
 
-wp option update siteurl http://test.yoursite.com
-wp option update home http://test.yoursite.com
+wp option update siteurl 'http://test.yoursite.com'
+wp option update home 'http://test.yoursite.com'
 wp option update blogname 'Yoursite TEST'
 
 echo "Searching and replacing domain name. Please wait this takes several minutes"
