@@ -30,7 +30,7 @@ $interfaceSearch = "Realtek*"
 
 if (! $silent) {
     # Show targeted adapters
-    Get-NetAdapter -InterfaceDescription $interfaceSearch | select Name,InterfaceDescription,Status,DriverVersion
+    Get-NetAdapter -InterfaceDescription $interfaceSearch | Select-Object Name,InterfaceDescription,Status,DriverVersion
 }
 
 if ($ipv6) {
@@ -43,12 +43,13 @@ if ($ipv6) {
 } elseif ($enable) {
     # Enable all checksum offloading
     Enable-NetAdapterChecksumOffload -InterfaceDescription $interfaceSearch
+    if ($?) {
+        Remove-Item C:\SMSCache\internetaccess.txt -ErrorAction SilentlyContinue
+    }
 
     # Enable all LSO
     Enable-NetAdapterLso -InterfaceDescription $interfaceSearch
-    if ($?) {
-        rm C:\SMSCache\internetaccess.txt
-    }
+
 } else {
     # Disable all checksum offloading. This also causes RSS, RSC and LSO to be disabled
     Disable-NetAdapterChecksumOffload -InterfaceDescription $interfaceSearch
