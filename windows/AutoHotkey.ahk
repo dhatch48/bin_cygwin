@@ -15,12 +15,13 @@
 
 #z::Run https://www.autohotkey.com/docs/Hotkeys.htm
 
-^!n::
-IfWinExist Untitled - Notepad
-	WinActivate
-else
-	Run Notepad
-return
+; Use Window Spy to get window/process info
+;^!n::
+;IfWinExist Untitled - Notepad
+;	WinActivate
+;else
+;	Run Notepad
+;return
 
 ; My quick VIM movement
 ;;;;;;;;;;;;;;;;;;;;;;;;
@@ -40,25 +41,37 @@ CapsLock & '::Del
 CapsLock & y::Run Calc
 CapsLock & t::Run notepad++
 
+; middle click to paste
+;MButton::^v
+
 ; Hotstrings
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ::btw::by the way
 return
 ::gm::good morning
 return
+::idk::I don't know
+return
 ::yw::you're welcome
 return
 ::ty::thank you
 return
+::ct::cool, thanks
+return
 :*:dh@::david.hatch@carlsbadca.gov ; asterisk means an ending character isn not required
 return
 
-::dt::  ; This hotstring replaces "]d" with the current date and time via the commands below.
+::]d::
+FormatTime, CurrentDateTime,, MM/dd/yyyy
+SendInput %CurrentDateTime%
+return
+
+::]dt::  ; This hotstring replaces "]d" with the current date and time via the commands below.
 FormatTime, CurrentDateTime,, MM/dd/yyyy HH:mm:ss  ; It will look like 09/01/2005 13:53:48
 SendInput %CurrentDateTime%
 return
 
-::dtu::
+::]dtu::
 FormatTime, CurrentDateTime,, yyyy-MM-dd_HH_mm_ss
 SendInput %CurrentDateTime%
 return
