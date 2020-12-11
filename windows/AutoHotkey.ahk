@@ -48,6 +48,8 @@ CapsLock & t::Run notepad++
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ::btw::by the way
 return
+::brb::be right back
+return
 ::gm::good morning
 return
 ::idk::I don't know
@@ -58,7 +60,17 @@ return
 return
 ::ct::cool, thanks
 return
+::bc::because
+return
+::nvm::never mind
+return
 :*:dh@::david.hatch@carlsbadca.gov ; asterisk means an ending character isn not required
+return
+::m#::760-814-4121
+return
+:*:]de::desk_dhatc
+return
+::nu::net user /domain 
 return
 
 ::]d::
