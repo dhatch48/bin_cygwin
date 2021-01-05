@@ -64,6 +64,8 @@ return
 return
 ::nvm::never mind
 return
+::lmk::let me know
+return
 :*:dh@::david.hatch@carlsbadca.gov ; asterisk means an ending character isn not required
 return
 ::m#::760-814-4121
