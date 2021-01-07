@@ -60,7 +60,9 @@ function get-uninstallString {
         [String]
         $searchName
     )
-    Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
+    Get-ChildItem -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall,
+        HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall,
+        HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall |
         Get-ItemProperty | Where-Object {$_.DisplayName -match "$searchName" } |
         Format-List -Property DisplayName, DisplayVersion, UninstallString, PSPath
 }
