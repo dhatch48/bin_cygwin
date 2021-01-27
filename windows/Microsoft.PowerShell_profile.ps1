@@ -31,10 +31,17 @@ function Get-Path {
 }
 new-alias path Get-Path
 
-function elevate-cmd {
+function Start-Elevated {
     Start-Process @args -verb runas
 }
-new-alias sudo elevate-cmd
+new-alias sudo Start-Elevated
+
+function Start-ElevatedPS {
+    param([ScriptBlock]$code)
+
+    Start-Process -FilePath powershell.exe -Verb RunAs -ArgumentList $code
+}
+#Start-ElevatedPS { New-Item test1.txt -ItemType File }
 
 function down {
     cd $HOME\Downloads
@@ -48,12 +55,12 @@ function nu-reset {
     net user $args Police123 /logonpasswordchg:yes /active:yes /domain
 }
 
-function find-adcomputer {
-    get-adcomputer -Filter "description -like `"*$args*`"" -Properties description,IPv4Address
+function Find-ADComputer {
+    Get-ADComputer -Filter "description -like `"*$args*`"" -Properties description,IPv4Address
 }
-new-alias fac find-adcomputer
+new-alias fac Find-ADComputer
 
-function get-uninstallString {
+function Get-UninstallString {
     Param(
         [Parameter(Mandatory=$true,
         ValueFromPipeline=$true)]
@@ -67,9 +74,14 @@ function get-uninstallString {
         Format-List -Property DisplayName, DisplayVersion, UninstallString, PSPath
 }
 
-function install-powershell {
+function Install-PowerShell {
     Invoke-Expression "& { $(Invoke-RestMethod https://aka.ms/install-powershell.ps1) } -UseMSI"
 }
+
+function Get-ChildItemUnix {
+    Get-ChildItem @args | Format-Table Mode, @{N='Owner';E={(Get-Acl $_.FullName).Owner}}, Length, LastWriteTime, Name
+}
+New-Alias ll Get-ChildItemUnix
 
 # Welcome
 "Welcome {0}, to Powershell {1}" -f $ENV:username,($PSVersionTable.PSVersion)
