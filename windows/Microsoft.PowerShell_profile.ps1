@@ -79,9 +79,17 @@ function Install-PowerShell {
 }
 
 function Get-ChildItemUnix {
-    Get-ChildItem @args | Format-Table Mode, @{N='Owner';E={(Get-Acl $_.FullName).Owner}}, Length, LastWriteTime, Name
+    Get-ChildItem $args[0] |
+        Format-Table Mode, @{N='Owner';E={(Get-Acl $_.FullName).Owner}}, Length, LastWriteTime, @{N='Name';E={if($_.Target) {$_.Name+' -> '+$_.Target} else {$_.Name}}}
 }
 New-Alias ll Get-ChildItemUnix
+
+function Get-ChildItemUnixMod {
+    Get-ChildItem $args[0] |
+        Sort-Object -Property LastWriteTime -Descending |
+        Format-Table Mode, @{N='Owner';E={(Get-Acl $_.FullName).Owner}}, Length, LastWriteTime, @{N='Name';E={if($_.Target) {$_.Name+' -> '+$_.Target} else {$_.Name}}}
+}
+New-Alias lt Get-ChildItemUnixMod
 
 # Welcome
 "Welcome {0}, to Powershell {1}" -f $ENV:username,($PSVersionTable.PSVersion)
