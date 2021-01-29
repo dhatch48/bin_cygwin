@@ -6,7 +6,7 @@
 .NOTES
     Author(s):  David Hatch
     Version:    1.3
-    Updating Menu: Simply update the config files in \\sccm01v\Apps\Vigilant LPR\LPR\ and make sure their name matches the pattern "system_*.ini"
+    Updating Menu: Simply update the config files in $sourcePath folder and make sure their name matches the pattern "system_*.ini"
 #>
 $installPath = 'C:\Program Files (x86)\Vigilant Solutions\Vigilant Mobile LPR'
 $sourcePath = '\\sccm01v\Apps\Vigilant LPR\LPR'
@@ -23,7 +23,7 @@ function Show-Menu {
     foreach ($file in $configFiles) {
         '{0}: {1}' -f ($configFiles.IndexOf($file)+1),($file.BaseName.Substring(7))
     }
-    
+
     Write-Host "Press 'q' to quit"
 }
 
