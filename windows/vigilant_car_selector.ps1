@@ -41,6 +41,6 @@ if ($opt -match "^[1-$optCount]$") {
     copy $configFiles[$opt] $installPath
     if ($?) {
         "Installed file {0}`nDone!" -f ($configFiles[$opt].Name)
-        pause
     }
+    pause
 }
