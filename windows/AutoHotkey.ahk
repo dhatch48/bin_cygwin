@@ -40,6 +40,11 @@ CapsLock & SC027::+Insert
 CapsLock & '::Del
 CapsLock & y::Run Calc
 CapsLock & t::Run notepad++
+CapsLock & z::AppsKey
+; Send the NumpadEnter specifically
+CapsLock & Enter::
+send, {NumpadEnter}
+return
 
 ; middle click to paste
 ;MButton::^v
