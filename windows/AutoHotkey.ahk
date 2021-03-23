@@ -71,6 +71,8 @@ return
 return
 ::lmk::let me know
 return
+::atm::at the moment
+return
 :*:dh@::david.hatch@carlsbadca.gov ; asterisk means an ending character isn not required
 return
 ::m#::760-814-4121
