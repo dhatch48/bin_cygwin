@@ -63,8 +63,6 @@ return
 return
 ::ty::thank you
 return
-::ct::cool, thanks
-return
 ::bc::because
 return
 ::nvm::never mind
