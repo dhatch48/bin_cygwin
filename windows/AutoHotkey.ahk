@@ -71,11 +71,13 @@ return
 return
 ::atm::at the moment
 return
-:*:dh@::davidhatch@fedex.com ; asterisk means an ending character isn not required
+:*:dh@::davidhatch@fedex.com ; asterisk means an ending character is not required
 return
 ::m#::760-685-3384
 return
 :*:]id::4103847
+return
+:*:]td::Thanks,`rDavid
 return
 ::nu::net user /domain 
 return
