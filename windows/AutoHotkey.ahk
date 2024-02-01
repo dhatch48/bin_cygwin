@@ -87,6 +87,11 @@ FormatTime, CurrentDateTime,, MM/dd/yyyy
 SendInput %CurrentDateTime%
 return
 
+::]du::
+FormatTime, CurrentDateTime,, yyyy-MM-dd
+SendInput %CurrentDateTime%
+return
+
 ::]dt::  ; This hotstring replaces "]d" with the current date and time via the commands below.
 FormatTime, CurrentDateTime,, MM/dd/yyyy HH:mm:ss  ; It will look like 09/01/2005 13:53:48
 SendInput %CurrentDateTime%
