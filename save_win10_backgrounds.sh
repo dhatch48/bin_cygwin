@@ -35,6 +35,7 @@ destDir='/cygdrive/e/Pics/win10_backgrounds/'
 for file in $(find "$sourceDir" -size +300k); do
     res=$(file --brief "$file" | awk -F', ' '{ print $(NF-1) }')
     if [ $res == '1920x1080' ];then
-        cp -n "$file" "$destDir/${file##*/}.jpg"
+        cp -n "$file" "$destDir${file##*/}.jpg"
+        echo "copied file: $destDir${file##*/}.jpg"
     fi
 done
