@@ -10,22 +10,22 @@ goto :done
 
 :to
 echo Syncing to One Drive...
-robocopy .\customers\ %oneDrivePath% /E /XO
+robocopy .\customers\ %oneDrivePath% /E /XO /NDL
 goto :eof
 
 :from
 echo Syncing from One Drive...
-robocopy %oneDrivePath% .\customers\ /E /XO
+robocopy %oneDrivePath% .\customers\ /E /XO /NDL
 goto :eof
 
 :dry
 echo Dry run....
 echo Syncing to One Drive...
-robocopy .\customers\ %oneDrivePath% /E /XO /L
+robocopy .\customers\ %oneDrivePath% /E /XO /NDL /L
 
 echo Dry run....
 echo Syncing from One Drive...
-robocopy %oneDrivePath% .\customers\ /E /XO /L
+robocopy %oneDrivePath% .\customers\ /E /XO /NDL /L
 goto :eof
 
 :sync
