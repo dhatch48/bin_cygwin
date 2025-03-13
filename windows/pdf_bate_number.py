@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # import packages
 import os
 import sys
@@ -25,7 +27,7 @@ if len(sys.argv) == 2:
 resultFile = (os.getcwd() + "\\pdf_bate_number_results.csv")
 writer = csv.writer(open(resultFile, 'w', newline=''))
 # write header
-writer.writerow(["filename","bate_number","page_count"])
+writer.writerow(["full_path","filename","bate_number","page_count"])
 
 # loop recursively through all pdf files
 for (dirpath, dirnames, filenames) in os.walk(dirPath):
@@ -39,11 +41,13 @@ for (dirpath, dirnames, filenames) in os.walk(dirPath):
             # get number of pages
             pageCount = len(reader.pages)
 
+            # extract text and search for pattern
             text = reader.pages[0].extract_text() 
             res_search = re.search(search_pattern, text, re.IGNORECASE)
+
             # write each result to CSV file
             if res_search:
-                row = (file,res_search.group(0),pageCount)
+                row = (fullFileName, file,res_search.group(0),pageCount)
                 print(row)
                 writer.writerow(row)
 print("results saved to: ", '\033[1m' + resultFile + '\033[0m')
