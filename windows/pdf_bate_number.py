@@ -3,7 +3,8 @@
 # import packages
 import os
 import sys
-from PyPDF2 import PdfReader
+#from PyPDF2 import PdfReader
+import pypdfium2 as pdfium
 import re
 import csv
 
@@ -36,13 +37,16 @@ for (dirpath, dirnames, filenames) in os.walk(dirPath):
             fullFileName = os.path.join(dirpath,file)
 
             # open the pdf file
-            reader = PdfReader(fullFileName)
+            #reader = PdfReader(fullFileName)
+            reader = pdfium.PdfDocument(fullFileName)
 
             # get number of pages
-            pageCount = len(reader.pages)
+            #pageCount = len(reader.pages)
+            pageCount = len(reader)
 
             # extract text and search for pattern
-            text = reader.pages[0].extract_text() 
+            #text = reader.pages[0].extract_text()
+            text = reader[0].get_textpage().get_text_bounded()
             res_search = re.search(search_pattern, text, re.IGNORECASE)
 
             # write each result to CSV file
@@ -56,10 +60,10 @@ print("done!")
 '''
             # Original code to loop through all pages of PDF
             for i, page in enumerate(reader.pages):
-                text = page.extract_text() 
+                text = page.extract_text()
                 res_search = re.search(search_pattern, text)
                 # print filename, matched text and page number
                 if res_search:
                     row = (fullFileName,res_search.group(0),i)
-                    print(row) 
+                    print(row)
 '''
