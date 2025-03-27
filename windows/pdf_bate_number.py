@@ -52,8 +52,11 @@ for (dirpath, dirnames, filenames) in os.walk(dirPath):
             # write each result to CSV file
             if res_search:
                 row = (fullFileName, file,res_search.group(0),pageCount)
-                print(row)
-                writer.writerow(row)
+            else:
+                row = (fullFileName, file,"no match found",pageCount)
+            
+            print(row)
+            writer.writerow(row)
 print("results saved to: ", '\033[1m' + resultFile + '\033[0m')
 print("done!")
 
