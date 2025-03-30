@@ -65,7 +65,11 @@ for (path, directories, files) in os.walk(dirPath):
         
         # Ignore this script and result file
         elif curFile.startswith("pdf_bate"):
-            exit
+            continue
+
+        # Ignore python
+        elif relFilePath.startswith("_internal"):
+            continue
 
         # log all other files
         else:
