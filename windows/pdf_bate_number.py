@@ -26,19 +26,20 @@ if len(sys.argv) == 2:
 
 # save results to CSV file in the same folder as this script
 resultFile = (os.getcwd() + "\\pdf_bate_number_results.csv")
-writer = csv.writer(open(resultFile, 'w', newline=''))
+writer = csv.writer(open(resultFile, 'w', newline='', encoding='utf-8'))
 # write header
-writer.writerow(["full_path","filename","bate_number","page_count"])
+writer.writerow(["file_path","filename","bate_number","page_count"])
 
 # loop recursively through all pdf files
-for (dirpath, dirnames, filenames) in os.walk(dirPath):
-    for file in filenames:
-        if file.casefold().endswith('pdf'):
-            fullFileName = os.path.join(dirpath,file)
+for (path, directories, files) in os.walk(dirPath):
+    for curFile in files:
+        if curFile.casefold().endswith('pdf'):
+            fullFilePath = os.path.join(path,curFile)
+            relFilePath = os.path.relpath(fullFilePath,dirPath)
 
             # open the pdf file
             #reader = PdfReader(fullFileName)
-            reader = pdfium.PdfDocument(fullFileName)
+            reader = pdfium.PdfDocument(relFilePath)
 
             # get number of pages
             #pageCount = len(reader.pages)
@@ -51,9 +52,9 @@ for (dirpath, dirnames, filenames) in os.walk(dirPath):
 
             # write each result to CSV file
             if res_search:
-                row = (fullFileName, file,res_search.group(0),pageCount)
+                row = (relFilePath, curFile,res_search.group(0),pageCount)
             else:
-                row = (fullFileName, file,"no match found",pageCount)
+                row = (relFilePath, curFile,"no match found",pageCount)
             
             print(row)
             writer.writerow(row)
@@ -67,6 +68,6 @@ print("done!")
                 res_search = re.search(search_pattern, text)
                 # print filename, matched text and page number
                 if res_search:
-                    row = (fullFileName,res_search.group(0),i)
+                    row = (fullFilePath,res_search.group(0),i)
                     print(row)
 '''
