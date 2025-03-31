@@ -3,7 +3,6 @@
 # import packages
 import os
 import sys
-#from PyPDF2 import PdfReader
 import pypdfium2 as pdfium
 import re
 import csv
@@ -17,7 +16,8 @@ change dirPath string below or default is current script path
 dirPath = os.getcwd()
 
 # define bate number pattern and resultFile
-search_pattern = '[A-Z]{2,}[-_]?[0-9]{4,10}+'
+#search_pattern = '[A-Z]{2,}[-_]?[0-9]{4,10}+'
+search_pattern = '[-_A-Z]{2,}[0-9]{4,10}+'
 resultFile = (os.getcwd() + "\\pdf_bates_number_results.csv")
 
 # set string prefix if passed
@@ -43,21 +43,34 @@ for (path, directories, files) in os.walk(dirPath):
         if fileExt == "pdf":
 
             # open the pdf file
-            #reader = PdfReader(fullFileName)
             reader = pdfium.PdfDocument(relFilePath)
 
             # get number of pages
-            #pageCount = len(reader.pages)
             pageCount = len(reader)
 
-            # extract text and search for pattern
-            #text = reader.pages[0].extract_text()
-            text = reader[0].get_textpage().get_text_bounded()
-            res_search = re.search(search_pattern, text, re.IGNORECASE)
+            # Get page bounding coordinates (0,0 is bottom left but some start negative)
+            pageBounding = reader[0].get_bbox()
+            pageWidth = pageBounding[2]
+            pageHeight = pageBounding[3]
+            pageBottom = pageBounding[1]
+
+            # extract all text from first page
+            #text = reader[0].get_textpage().get_text_bounded()
+
+            # extract text from bottom right corner of first page
+            text = reader[0].get_textpage().get_text_bounded(left=pageWidth-250, bottom=pageBottom, right=pageWidth, top=pageBottom+70)
+
+            # Use regex search pattern to match possible bates numbers
+            #res_search = re.search(search_pattern, text, re.IGNORECASE)
+            res_search = re.findall(search_pattern, text, re.IGNORECASE)
 
             # write each result to CSV file
             if res_search:
-                row = (res_search.group(0), pageCount, relFilePath, curFile, fileExt, curFile)
+                #row = (res_search.group(0), pageCount, relFilePath, curFile, fileExt, curFile)
+                if len(res_search) == 1:
+                    row = (res_search[0], pageCount, relFilePath, curFile, fileExt, curFile)
+                else:
+                    row = (res_search, pageCount, relFilePath, curFile, fileExt, curFile)
             else:
                 row = ("no match found", pageCount, relFilePath, curFile, fileExt, curFile)
             print(row)
@@ -67,7 +80,7 @@ for (path, directories, files) in os.walk(dirPath):
         elif curFile.startswith("pdf_bate"):
             continue
 
-        # Ignore python
+        # Ignore python folder
         elif relFilePath.startswith("_internal"):
             continue
 
