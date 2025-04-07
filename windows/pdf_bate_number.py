@@ -49,16 +49,25 @@ for (path, directories, files) in os.walk(dirPath):
             pageCount = len(reader)
 
             # Get page bounding coordinates (0,0 is bottom left but some start negative)
+            pageRotation = reader[0].get_rotation()
             pageBounding = reader[0].get_bbox()
-            pageWidth = pageBounding[2]
-            pageHeight = pageBounding[3]
+            pageLeft = pageBounding[0]
             pageBottom = pageBounding[1]
+            pageRight = pageBounding[2]
+            pageTop = pageBounding[3]
 
             # extract all text from first page
             #text = reader[0].get_textpage().get_text_bounded()
 
-            # extract text from bottom right corner of first page
-            text = reader[0].get_textpage().get_text_bounded(left=pageWidth-250, bottom=pageBottom, right=pageWidth, top=pageBottom+70)
+            # extract text from corner of first page
+            if pageRotation == 0: # bottom right corner
+                text = reader[0].get_textpage().get_text_bounded(left=pageRight-250, bottom=pageBottom, right=pageRight, top=pageBottom+70)
+            elif pageRotation == 90: # top right corner
+                text = reader[0].get_textpage().get_text_bounded(left=pageRight-70, bottom=pageTop-250, right=pageRight, top=pageTop)
+            elif pageRotation == 180: # top left corner
+                text = reader[0].get_textpage().get_text_bounded(left=pageLeft, bottom=pageTop-70, right=pageLeft+250, top=pageTop)
+            else: #== 270 bottom left corner
+                text = reader[0].get_textpage().get_text_bounded(left=pageLeft, bottom=pageBottom, right=pageLeft+70, top=pageBottom+250)
 
             # Use regex search pattern to match possible bates numbers
             #res_search = re.search(search_pattern, text, re.IGNORECASE)
